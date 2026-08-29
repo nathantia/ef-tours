@@ -1,5 +1,5 @@
-# EF Tours Journey Prototype · Version 15
+# EF Tours Journey Prototype · Version 16
 
-Version 15 replaces the quick-browse navigation strip on the Discover page with visual editorial discovery cards for Collections, All destinations, and major regions.
+Version 16 adds soft left/right gradient fades to the horizontal discovery-card rail on the Discover page so overflow feels intentional rather than abruptly clipped.
 
 Open `index.html` directly in a browser. No build step is required.
