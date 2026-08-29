@@ -1,11 +1,7 @@
-# EF Tours Journey Prototype · Version 12
+# EF Tours Journey Prototype · Version 13
 
-Trip Detail refinements:
-- secondary nav moved below hero
-- yellow quote bar removed
-- sticky itinerary rail offset adjusted below sticky subnav
-- real geographic Europe map used beneath interactive trip moments
-- pricing support cards use open-source SVG-style icons
-- FAQ section now includes a Pitch the trip CTA
-
-Open `index.html` or `trip.html` directly. No build step required.
+Latest updates:
+- Student dashboard hero now says “Welcome Back” and “Maya, what did the trip teach you?”
+- Added a private-feeling “Your group experience” media component before reflection.
+- Discover audience control now reads “Choose a perspective.”
+- Trip-card recommendation labels switch between “For students,” “For parents,” and “For educators.”

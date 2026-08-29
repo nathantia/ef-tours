@@ -236,10 +236,13 @@
         button.setAttribute('aria-selected', String(active));
       });
       const profile = profiles[currentProfile];
+      const audienceLabels = { student: 'For students', parent: 'For parents', educator: 'For educators' };
       profile.order.forEach((id) => {
         const card = $(`[data-trip="${id}"]`, grid);
         const why = $('[data-why]', card);
+        const whyLabel = $('[data-why-label]', card);
         if (why) why.textContent = profile.copy[audience][id];
+        if (whyLabel) whyLabel.textContent = audienceLabels[audience] || 'For students';
       });
     }
 
