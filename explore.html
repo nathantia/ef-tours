@@ -1,0 +1,210 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="An AI-assisted EF Tours discovery concept led by student interests and traveler voice." name="description"/>
+<title>Discover Trips · EF Tours Concept</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body data-page="explore">
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="prototype-ribbon"><span class="dot"></span> Concept 01 · Student-led discovery · AI matching simulated locally</div>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="EF Educational Tours concept home" class="brand" href="index.html"><img alt="EF logo" class="brand-logo" src="ef-logo.svg"/></a>
+<nav aria-label="Primary navigation" class="primary-nav">
+<a href="index.html">Overview</a>
+<a aria-current="page" href="explore.html">Discover</a>
+<a href="trip.html">Understand</a>
+<a href="dashboard.html">Reflect</a>
+</nav>
+<div class="header-actions">
+<button class="btn btn-secondary btn-small" data-demo="A private shortlist link would be ready to share with a parent or educator." type="button">Share shortlist</button>
+<button aria-expanded="false" aria-label="Open navigation" class="menu-button" type="button"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="explore-hero">
+<div class="container explore-hero-grid is-search-right">
+<div class="explore-copy">
+<p class="eyebrow">Student-led discovery</p>
+<h1>Start with what would make you want to go.</h1>
+<p class="lede">Tell EF what interests you. AI narrows hundreds of tours to a few strong matches and explains why each one fits.</p>
+</div>
+<div class="search-panel">
+<form class="smart-search smart-search-hero" id="smart-search">
+<p class="panel-kicker">AI trip matcher</p>
+<label for="trip-prompt">What do you want to see, try, or understand?</label>
+<textarea id="trip-prompt" name="trip-prompt" rows="4">I want art, food, history I can actually see, and a first international trip that feels manageable.</textarea>
+<div aria-label="Example searches" class="prompt-examples">
+<span>Try:</span>
+<button data-prompt="I want wildlife, nature, and a trip that pushes me a little." type="button">Nature + challenge</button>
+<button data-prompt="I want to practice another language and understand everyday culture." type="button">Language + culture</button>
+<button data-prompt="I want history, museums, and places that will help class make more sense." type="button">History + museums</button>
+</div>
+<button class="btn btn-primary btn-full" type="submit">Find my trips <span aria-hidden="true">→</span></button>
+<p class="ai-inline-note"><span class="ai-spark">✦</span><span>AI reads your interests, reranks the tours, and writes a plain-language reason for each match.</span></p>
+</form>
+</div>
+</div>
+</section>
+<section class="results-section" id="results">
+<div class="container">
+<div class="results-heading results-heading-audience">
+<div>
+<p class="eyebrow">Your matches</p>
+<h2 data-results-title="">Trips for food, history, and confidence.</h2>
+<p class="results-summary" data-results-summary="">Recommendations shaped around what you want to experience and become.</p>
+</div>
+<div aria-label="See the same trips through different audiences" class="audience-switcher">
+<p>See the same trips through</p>
+<div aria-label="Audience selector" class="audience-tabs" role="tablist">
+<button aria-selected="true" class="audience-tab is-active" data-audience="student" role="tab" type="button">Student</button>
+<button aria-selected="false" class="audience-tab" data-audience="parent" role="tab" type="button">Parent</button>
+<button aria-selected="false" class="audience-tab" data-audience="educator" role="tab" type="button">Educator</button>
+</div>
+</div>
+</div>
+<div class="trip-grid trip-grid-cards" id="trip-grid">
+<article class="trip-card trip-card-rich" data-trip="lpr">
+<div class="trip-card-image photo-shell" data-fallback="London, Paris and Rome">
+<img alt="Student group visiting London, Paris, and Rome" data-photo="" loading="lazy" src="https://a-us.storyblok.com/f/1021279/1440x757/25f35d28a8/group-photo.png/m/1600x840/filters%3Aquality%2870%29"/>
+<span class="match-badge">Best match</span><button aria-label="Save London, Paris and Rome" aria-pressed="false" class="save-heart" type="button">♡</button>
+</div>
+<div class="trip-card-copy">
+<p class="trip-kicker">Most popular · Europe</p><h3>London, Paris &amp; Rome</h3>
+<p class="trip-meta">10 days <span>3 countries</span> <span>First-time favorite</span></p>
+<div class="why-box"><span>Why you’ll love it</span><p data-why=""></p></div>
+<div class="traveler-audio"><button aria-label="Play Maya's 24-second educator perspective" class="audio-play" data-audio-name="Maya" data-audio-role="Educator" type="button"><span>▶</span></button><div><strong>Hear Maya’s take</strong><p>“By Rome, students were volunteering to navigate and explain what they noticed.”</p><small>Educator audio · 24 sec</small></div></div>
+<div class="card-footer"><a class="btn btn-primary btn-small" href="trip.html">See the trip</a><button class="share-link" data-demo="A private trip link would be ready to share." type="button">Share</button></div>
+</div>
+</article>
+<article class="trip-card trip-card-rich" data-trip="ig">
+<div class="trip-card-image photo-shell" data-fallback="Italy and Greece">
+<img alt="The Colosseum in Rome" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/>
+<span class="match-badge">Strong match</span><button aria-label="Save Italy and Greece" aria-pressed="false" class="save-heart" type="button">♡</button>
+</div>
+<div class="trip-card-copy">
+<p class="trip-kicker">History &amp; culture · Europe</p><h3>Italy &amp; Greece</h3>
+<p class="trip-meta">11 days <span>2 countries</span> <span>Ancient worlds</span></p>
+<div class="why-box"><span>Why you’ll love it</span><p data-why=""></p></div>
+<div class="traveler-audio"><button aria-label="Play Jules's 19-second student perspective" class="audio-play" data-audio-name="Jules" data-audio-role="Student" type="button"><span>▶</span></button><div><strong>Hear Jules’ take</strong><p>“History stopped feeling like a chapter.”</p><small>Student audio · 19 sec</small></div></div>
+<div class="card-footer"><button class="btn btn-primary btn-small" data-demo="This prototype includes one fully designed trip detail page." type="button">See the trip</button><button class="share-link" data-demo="A private trip link would be ready to share." type="button">Share</button></div>
+</div>
+</article>
+<article class="trip-card trip-card-rich" data-trip="gas">
+<div class="trip-card-image photo-shell" data-fallback="Germany, Austria and Switzerland">
+<img alt="Students walking in a European city garden" data-photo="" loading="lazy" src="https://a-us.storyblok.com/f/1015795/1172x750/8e72572652/destinations-europe-hub-munich.png"/>
+<span class="match-badge">Worth a look</span><button aria-label="Save Germany, Austria and Switzerland" aria-pressed="false" class="save-heart" type="button">♡</button>
+</div>
+<div class="trip-card-copy">
+<p class="trip-kicker">Cities &amp; Alps · Europe</p><h3>Germany, Austria &amp; Switzerland</h3>
+<p class="trip-meta">10 days <span>3 countries</span> <span>City + nature</span></p>
+<div class="why-box"><span>Why you’ll love it</span><p data-why=""></p></div>
+<div class="traveler-audio"><button aria-label="Play Leo's 31-second Tour Lead perspective" class="audio-play" data-audio-name="Leo" data-audio-role="Tour Lead" type="button"><span>▶</span></button><div><strong>Hear Leo’s take</strong><p>“The landscape helps students see how geography shapes the way communities live.”</p><small>Tour Lead audio · 31 sec</small></div></div>
+<div class="card-footer"><button class="btn btn-primary btn-small" data-demo="This prototype includes one fully designed trip detail page." type="button">See the trip</button><button class="share-link" data-demo="A private trip link would be ready to share." type="button">Share</button></div>
+</div>
+</article>
+<article class="trip-card trip-card-rich" data-trip="japan">
+<div class="trip-card-image photo-shell" data-fallback="Japan">
+<img alt="Tokyo city lights in Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/>
+<span class="match-badge">Worth a look</span><button aria-label="Save Japan Land of the Rising Sun" aria-pressed="false" class="save-heart" type="button">♡</button>
+</div>
+<div class="trip-card-copy">
+<p class="trip-kicker">Tradition &amp; technology · Asia</p><h3>Japan: Land of the Rising Sun</h3>
+<p class="trip-meta">11 days <span>1 country</span> <span>Tokyo to Kyoto</span></p>
+<div class="why-box"><span>Why you’ll love it</span><p data-why=""></p></div>
+<div class="traveler-audio"><button aria-label="Play Maya's 22-second educator perspective" class="audio-play" data-audio-name="Maya" data-audio-role="Educator" type="button"><span>▶</span></button><div><strong>Hear Maya’s take</strong><p>“Students started noticing how design and etiquette reflect shared values.”</p><small>Educator audio · 22 sec</small></div></div>
+<div class="card-footer"><button class="btn btn-primary btn-small" data-demo="This prototype includes one fully designed trip detail page." type="button">See the trip</button><button class="share-link" data-demo="A private trip link would be ready to share." type="button">Share</button></div>
+</div>
+</article>
+<article class="trip-card trip-card-rich" data-trip="costa">
+<div class="trip-card-image photo-shell" data-fallback="Costa Rica">
+<img alt="Lush tropical rainforest in Costa Rica" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/>
+<span class="match-badge">Worth a look</span><button aria-label="Save Costa Rica A Touch of the Tropics" aria-pressed="false" class="save-heart" type="button">♡</button>
+</div>
+<div class="trip-card-copy">
+<p class="trip-kicker">Ecology &amp; adventure · Latin America</p><h3>Costa Rica: A Touch of the Tropics</h3>
+<p class="trip-meta">9 days <span>1 country</span> <span>Nature in action</span></p>
+<div class="why-box"><span>Why you’ll love it</span><p data-why=""></p></div>
+<div class="traveler-audio"><button aria-label="Play Jules's 27-second student perspective" class="audio-play" data-audio-name="Jules" data-audio-role="Student" type="button"><span>▶</span></button><div><strong>Hear Jules’ take</strong><p>“Our ecology unit was suddenly everywhere.”</p><small>Student audio · 27 sec</small></div></div>
+<div class="card-footer"><button class="btn btn-primary btn-small" data-demo="This prototype includes one fully designed trip detail page." type="button">See the trip</button><button class="share-link" data-demo="A private trip link would be ready to share." type="button">Share</button></div>
+</div>
+</article>
+<article class="trip-card trip-card-rich" data-trip="peru">
+<div class="trip-card-image photo-shell" data-fallback="Peru">
+<img alt="Machu Picchu in Peru" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/>
+<span class="match-badge">Worth a look</span><button aria-label="Save Peru Land of the Inca" aria-pressed="false" class="save-heart" type="button">♡</button>
+</div>
+<div class="trip-card-copy">
+<p class="trip-kicker">Living history &amp; nature · Latin America</p><h3>Peru: Land of the Inca</h3>
+<p class="trip-meta">9 days <span>1 country</span> <span>Culture + landscape</span></p>
+<div class="why-box"><span>Why you’ll love it</span><p data-why=""></p></div>
+<div class="traveler-audio"><button aria-label="Play Leo's 26-second Tour Lead perspective" class="audio-play" data-audio-name="Leo" data-audio-role="Tour Lead" type="button"><span>▶</span></button><div><strong>Hear Leo’s take</strong><p>“The landscape changes how students read the history before anyone explains it.”</p><small>Tour Lead audio · 26 sec</small></div></div>
+<div class="card-footer"><button class="btn btn-primary btn-small" data-demo="This prototype includes one fully designed trip detail page." type="button">See the trip</button><button class="share-link" data-demo="A private trip link would be ready to share." type="button">Share</button></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="browse-section browse-destinations">
+<div class="container">
+<div class="browse-heading">
+<div><p class="eyebrow">Explore destinations</p><h2>Start with a part of the world.</h2></div>
+<p>Move from a broad sense of possibility to the places, cultures, and experiences that feel most compelling.</p>
+</div>
+<div class="region-grid">
+<a class="region-card photo-shell" data-demo="Europe destination results would open here." data-fallback="Europe" href="#"><img alt="Paris in Europe" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"/><span><strong>Europe</strong><small>Historic cities, art, language, and everyday culture</small></span><b>→</b></a>
+<a class="region-card photo-shell" data-demo="Latin America destination results would open here." data-fallback="Latin America" href="#"><img alt="Machu Picchu in Latin America" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"/><span><strong>Latin America</strong><small>Biodiversity, language, community, and living history</small></span><b>→</b></a>
+<a class="region-card photo-shell" data-demo="Asia destination results would open here." data-fallback="Asia" href="#"><img alt="Tokyo in Asia" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"/><span><strong>Asia</strong><small>Ancient traditions and fast-moving modern life</small></span><b>→</b></a>
+<a class="region-card photo-shell" data-demo="Africa destination results would open here." data-fallback="Africa" href="#"><img alt="Wildlife landscape in Africa" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"/><span><strong>Africa</strong><small>Culture, wildlife, history, and global connections</small></span><b>→</b></a>
+<a class="region-card photo-shell" data-demo="South Pacific destination results would open here." data-fallback="South Pacific" href="#"><img alt="Mountain landscape in the South Pacific" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"/><span><strong>South Pacific</strong><small>Ecology, Indigenous cultures, and outdoor learning</small></span><b>→</b></a>
+<a class="region-card photo-shell" data-demo="US and Canada destination results would open here." data-fallback="US and Canada" href="#"><img alt="North American mountain landscape" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"/><span><strong>US &amp; Canada</strong><small>Civic history, science, culture, and regional identity</small></span><b>→</b></a>
+</div>
+</div>
+</section>
+<section class="browse-section collection-section">
+<div class="container">
+<div class="browse-heading">
+<div><p class="eyebrow">Explore collections</p><h2>Start with a learning focus.</h2></div>
+<p>Collections help students and educators find tours shaped around readiness, subject matter, age, and purpose.</p>
+</div>
+<div class="collection-grid">
+<a class="collection-card" data-demo="Most Popular tours would open here." href="#"><figure class="photo-shell" data-fallback="Popular tours"><img alt="Students on a popular EF tour" data-photo="" loading="lazy" src="https://a-us.storyblok.com/f/1021279/1440x757/25f35d28a8/group-photo.png/m/1200x630/filters%3Aquality%2870%29"/></figure><div><span>Most Popular</span><strong>Tours educators choose again and again.</strong></div><b>→</b></a>
+<a class="collection-card" data-demo="Starter Tours would open here." href="#"><figure class="photo-shell" data-fallback="Starter tours"><img alt="Students on a first international trip" data-photo="" loading="lazy" src="https://a.storyblok.com/f/336931/2880x1270/c6263908ac/travel-philosophy-hero-desk.jpg/m/1600x706/filters%3Ablur%280%29"/></figure><div><span>Starter Tours</span><strong>Approachable routes for a first group trip.</strong></div><b>→</b></a>
+<a class="collection-card" data-demo="Career Readiness tours would open here." href="#"><figure class="photo-shell" data-fallback="Career readiness"><img alt="Students learning together" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"/></figure><div><span>Career Readiness</span><strong>Connect global experiences to future pathways.</strong></div><b>→</b></a>
+<a class="collection-card" data-demo="STEM tours would open here." href="#"><figure class="photo-shell" data-fallback="STEM tours"><img alt="Students working in a science setting" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"/></figure><div><span>STEM Tours</span><strong>Investigate science, design, and innovation in place.</strong></div><b>→</b></a>
+<a class="collection-card" data-demo="Middle School tours would open here." href="#"><figure class="photo-shell" data-fallback="Middle school tours"><img alt="Students exploring with an EF guide" data-photo="" loading="lazy" src="https://a-us.storyblok.com/f/1015795/1172x750/8e72572652/destinations-europe-hub-munich.png"/></figure><div><span>Middle School Tours</span><strong>Pacing and support built for younger travelers.</strong></div><b>→</b></a>
+<a class="collection-card" data-demo="Language &amp; Culture tours would open here." href="#"><figure class="photo-shell" data-fallback="Language and culture tours"><img alt="Students experiencing everyday culture in Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"/></figure><div><span>Language &amp; Culture</span><strong>Practice language and understand daily life in context.</strong></div><b>→</b></a>
+</div>
+<div class="browse-action"><button class="btn btn-secondary" data-demo="All EF tour collections would open here." type="button">View all collections</button></div>
+</div>
+</section>
+<section class="story-strip-section">
+<div class="container">
+<div class="story-strip-heading"><h2>Explore through people,<br/>not just pins.</h2><p>Short, lightly edited student perspectives help a prospective traveler picture the moments between the landmarks.</p></div>
+<div class="story-strip-grid">
+<article class="story-card photo-shell" data-fallback="Student perspective video"><img alt="Student group with the London Eye in the background" data-photo="" loading="lazy" src="https://a-us.storyblok.com/f/1021279/1440x757/25f35d28a8/group-photo.png/m/1200x630/filters%3Aquality%2870%29"/><button class="play-chip" data-demo="A short student perspective clip would open here." type="button">▶</button><div class="story-copy"><strong>“What I wish I knew before my first flight.”</strong><span>Maya · first time abroad · 24 sec</span></div></article>
+<article class="story-card photo-shell" data-fallback="Student perspective video"><img alt="Students visiting a historic site in Europe" data-photo="" loading="lazy" src="https://a.storyblok.com/f/239725/1500x2000/f41bc5ca5e/04_fr_par_gallery_activities_studentssightseeingatarcdetriomphe.png"/><button class="play-chip" data-demo="A short student perspective clip would open here." type="button">▶</button><div class="story-copy"><strong>“The moment ancient Rome stopped feeling ancient.”</strong><span>Jules · history fan · 19 sec</span></div></article>
+<article class="story-card photo-shell" data-fallback="Student perspective video"><img alt="Students walking through a city with a guide" data-photo="" loading="lazy" src="https://a-us.storyblok.com/f/1015795/1172x750/8e72572652/destinations-europe-hub-munich.png"/><button class="play-chip" data-demo="A short student perspective clip would open here." type="button">▶</button><div class="story-copy"><strong>“I didn’t become fearless. I got better at trying.”</strong><span>André · curious but nervous · 31 sec</span></div></article>
+<article class="story-card photo-shell" data-fallback="Student perspective video"><img alt="Student smiling outdoors during travel" data-photo="" loading="lazy" src="https://a.storyblok.com/f/336931/750x691/ef0ade726b/vimy-100-blog-hero-mob.png/m/1200x630/smart/filters%3Aformat%28jpeg%29"/><button class="play-chip" data-demo="A short student perspective clip would open here." type="button">▶</button><div class="story-copy"><strong>“A place I thought I understood—until I stood there.”</strong><span>Nia · living history · 28 sec</span></div></article>
+</div>
+</div>
+</section>
+<section class="handoff-section">
+<div class="container handoff-card"><div><p class="eyebrow light">A better family conversation</p><h2>Students begin with genuine interest. EF adds the learning, support, and practical details.</h2></div><a class="btn btn-light" href="trip.html">See the Understand concept <span aria-hidden="true">→</span></a></div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div><a class="brand" href="index.html"><img alt="EF logo" class="brand-logo" src="ef-logo.svg"/></a><p>Independent interview concept by Nathan Tia. EF and related marks belong to their owners. Student names and quotes are illustrative.</p></div>
+<div class="footer-links"><a href="index.html">Overview</a><a href="explore.html">Discover</a><a href="trip.html">Understand</a><a href="dashboard.html">Reflect</a></div>
+</div>
+</footer>
+<div aria-live="polite" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
