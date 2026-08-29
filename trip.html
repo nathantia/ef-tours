@@ -27,7 +27,20 @@
   </header>
 
   <main id="main">
-    <section class="trip-hero">
+    <nav class="trip-subnav" aria-label="Trip detail sections">
+      <div class="container trip-subnav-inner">
+        <div class="trip-subnav-links">
+          <a href="#overview" class="is-active" data-subnav-link>Overview</a>
+          <a href="#itinerary" data-subnav-link>Itinerary</a>
+          <a href="#learning" data-subnav-link>Learning</a>
+          <a href="#trip-moments" data-subnav-link>Trip moments</a>
+          <a href="#price" data-subnav-link>Price</a>
+          <a href="#faqs" data-subnav-link>FAQs</a>
+        </div>
+        <a class="btn btn-primary btn-small trip-subnav-cta" href="#price">Start planning</a>
+      </div>
+    </nav>
+    <section class="trip-hero" id="overview">
       <img data-photo src="https://a.storyblok.com/f/336931/2880x1270/c6263908ac/travel-philosophy-hero-desk.jpg/m/3840x1693/filters%3Ablur%280%29" alt="Students traveling together in Europe">
       <div class="container trip-hero-inner">
         <div class="trip-hero-copy">
@@ -198,18 +211,18 @@
                 <a href="#day-10" class="rail-stop" data-rail-city="home"><span class="rail-dot"></span><span><b>Home</b><small>Day 10 · reflect + apply</small></span></a>
               </nav>
               <div class="rail-practice"><span>You’ll practice</span><div><b>Curiosity</b><b>Cultural awareness</b><b>Confidence</b><b>Communication</b></div></div>
-              <button class="btn btn-secondary btn-full" type="button" data-demo="A printable itinerary would download here.">Download itinerary</button>
+              <a class="btn btn-secondary btn-full" href="#price">Start planning</a>
             </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <section class="section section-blue">
+    <section class="section section-blue" id="learning">
       <div class="container plan-grid">
         <div class="plan-control reveal">
           <p class="eyebrow light">AI embedded in the task</p>
-          <h2>Connect the itinerary to your class.</h2>
+          <h2>Connect this itinerary to your class.</h2>
           <p>Choose one subject. AI turns the real itinerary into a concise before, during, and after learning plan—without opening a separate chat.</p>
           <div class="form-row">
             <select id="subject-select" aria-label="Choose a class subject">
@@ -234,24 +247,64 @@
       </div>
     </section>
 
-    <section class="section section-cream">
-      <div class="container family-layout">
-        <figure class="family-photo photo-shell reveal" data-fallback="EF travelers and educator">
-          <img loading="lazy" data-photo src="https://a.storyblok.com/f/266035/2272x1384/f445e44017/impact_stage.webp/m/3840x2339/filters%3Aquality%2870%29" alt="An EF student and educator overlooking a European city">
-        </figure>
-        <div class="reveal">
-          <p class="eyebrow">Clear value for families</p>
-          <h2>Students feel the possibility. Adults see the plan.</h2>
-          <div class="proof-list">
-            <div class="proof-item"><span class="proof-icon">1</span><span><strong>Learning is built into the itinerary</strong><span>Major stops connect to observation, discussion, and classroom use.</span></span></div>
-            <div class="proof-item"><span class="proof-icon">2</span><span><strong>People are there to support the group</strong><span>A Tour Director, educator, and local experts help students learn and navigate.</span></span></div>
-            <div class="proof-item"><span class="proof-icon">3</span><span><strong>The practical details are organized</strong><span>Transportation, hotels, activities, and support are coordinated around the group.</span></span></div>
+    <section class="section trip-moments-section" id="trip-moments">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">Voice of the traveler</p><h2>Explore the trip through real moments.</h2></div>
+          <p>Follow the route and open moments from students, educators, and Tour Leads along the way.</p>
+        </div>
+        <div class="trip-map-shell reveal">
+          <div class="trip-map" role="img" aria-label="Minimal route map connecting London, Paris, and Rome with clickable trip moments">
+            <svg viewBox="0 0 960 520" aria-hidden="true" class="trip-map-art">
+              <rect x="0" y="0" width="960" height="520" rx="28" fill="#eef5fb"/>
+              <path d="M145 148 C245 115 315 150 405 210 S560 325 700 382" fill="none" stroke="#90b9df" stroke-width="4" stroke-dasharray="7 10"/>
+              <path d="M160 120 C240 95 338 120 424 196 C493 256 575 326 712 360" fill="none" stroke="#d5e6f4" stroke-width="56" stroke-linecap="round" opacity=".65"/>
+              <circle cx="160" cy="120" r="13" fill="#0873e6"/><circle cx="424" cy="196" r="13" fill="#0873e6"/><circle cx="712" cy="360" r="13" fill="#0873e6"/>
+              <text x="125" y="90" font-size="26" font-family="Arial" font-weight="800" fill="#0b1522">London</text>
+              <text x="392" y="164" font-size="26" font-family="Arial" font-weight="800" fill="#0b1522">Paris</text>
+              <text x="680" y="330" font-size="26" font-family="Arial" font-weight="800" fill="#0b1522">Rome</text>
+            </svg>
+            <button class="map-dot map-dot-london-1 is-active" style="left:17%;top:34%" data-map-story="london-video" aria-label="Open London student video"><span>▶</span></button>
+            <button class="map-dot map-dot-london-2" style="left:27%;top:27%" data-map-story="london-audio" aria-label="Open London Tour Lead audio"><span>♪</span></button>
+            <button class="map-dot map-dot-paris-1" style="left:46%;top:47%" data-map-story="paris-image" aria-label="Open Paris image story"><span>●</span></button>
+            <button class="map-dot map-dot-paris-2" style="left:54%;top:40%" data-map-story="paris-audio" aria-label="Open Paris educator audio"><span>♪</span></button>
+            <button class="map-dot map-dot-rome-1" style="left:72%;top:69%" data-map-story="rome-video" aria-label="Open Rome student video"><span>▶</span></button>
+            <button class="map-dot map-dot-rome-2" style="left:79%;top:61%" data-map-story="rome-image" aria-label="Open Rome image story"><span>●</span></button>
           </div>
-          <aside class="family-summary">
-            <p class="mini">Student-to-family summary</p>
-            <p>“I want to see how three cities tell their history through art, buildings, food, and public space. I’ll collect examples I can use in class, and I’ll travel with my teacher, Tour Director, and group.”</p>
-            <button class="btn btn-dark btn-small" type="button" data-demo="An editable summary would be copied for the student.">Copy family summary</button>
+          <aside class="map-story-card" aria-live="polite">
+            <div class="map-story-media photo-shell" data-fallback="Student story"><img id="map-story-image" data-photo src="https://a.storyblok.com/f/239725/1500x2100/b50e0739fd/01_gb_lon_gallery_activities_studentssightseeing.png/m/1371x1920/filters%3Aquality%2870%29" alt="Students exploring London"></div>
+            <div class="map-story-copy"><p class="eyebrow" id="map-story-role">Student video · London</p><h3 id="map-story-title">The first moment London felt real.</h3><p id="map-story-text">“I knew the landmarks, but walking between them made the city feel completely different from the version I had in my head.”</p><button class="btn btn-dark btn-small" id="map-story-action" type="button" data-demo="This short student clip would play here.">Play 21 sec</button></div>
           </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section price-section" id="price">
+      <div class="container">
+        <div class="price-heading reveal"><p class="eyebrow">Start planning</p><h2>Unlock your trip price.</h2><p>Choose a departure city and date to see an illustrative starting price for this prototype.</p></div>
+        <div class="price-calculator reveal">
+          <div class="price-fields">
+            <label>Leaving from:<input type="text" value="Boston (MA)" aria-label="Leaving from"></label>
+            <label>Leaving on:<input type="date" value="2027-03-13" aria-label="Leaving on"></label>
+          </div>
+          <div class="price-main"><strong>$4,479<span>*</span></strong><button class="price-details-link" type="button" data-demo="A detailed price breakdown would open here.">View price details →</button></div>
+          <div class="price-cta"><button class="btn btn-primary" type="button" data-demo="A personalized quote flow would begin here.">Get your personalized quote</button><small>*Illustrative price for prototype review. Restrictions apply.</small></div>
+        </div>
+        <div class="price-support-grid reveal">
+          <button class="price-support-card" type="button" data-demo="Payment plan information would open here."><span class="support-icon">□</span><span><strong>Payment plan options</strong><small>Pay over time interest-free or pay all at once.</small></span><b>→</b></button>
+          <button class="price-support-card" type="button" data-demo="Fundraising information would open here."><span class="support-icon">▰</span><span><strong>Fundraising</strong><small>Every traveler receives a no-fee donation page.</small></span><b>→</b></button>
+          <button class="price-support-card" type="button" data-demo="Scholarship information would open here."><span class="support-icon">◉</span><span><strong>Global Citizen Scholarship</strong><small>EF awards scholarships to student travelers each year.</small></span><b>→</b></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faqs">
+      <div class="container faq-layout reveal">
+        <div><p class="eyebrow">Planning questions</p><h2>What families usually ask.</h2></div>
+        <div class="faq-list">
+          <details open><summary>Who supports students while they travel?</summary><p>The group travels with its educator and an EF Tour Director, with additional local support built into the itinerary.</p></details>
+          <details><summary>What is included in the trip price?</summary><p>For this concept, transportation, hotels, scheduled activities, and guided support are presented as coordinated parts of the experience.</p></details>
+          <details><summary>Can families pay over time?</summary><p>The planning experience surfaces payment plan and fundraising options alongside the trip price.</p></details>
         </div>
       </div>
     </section>

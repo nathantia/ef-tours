@@ -381,6 +381,40 @@
       dayCards.forEach((card) => cityObserver.observe(card));
     }
 
+
+    // Trip detail sticky subnav and trip-moments map
+    const subnavLinks = $$('[data-subnav-link]');
+    const subnavSections = subnavLinks.map((link) => $(link.getAttribute('href'))).filter(Boolean);
+    if ('IntersectionObserver' in window && subnavSections.length) {
+      const subnavObserver = new IntersectionObserver((entries) => {
+        const visible = entries.filter((entry) => entry.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (!visible) return;
+        subnavLinks.forEach((link) => link.classList.toggle('is-active', link.getAttribute('href') === `#${visible.target.id}`));
+      }, { rootMargin: '-18% 0px -70% 0px', threshold: [0,.1,.25,.4] });
+      subnavSections.forEach((section) => subnavObserver.observe(section));
+    }
+
+    const mapStories = {
+      'london-video': { role:'Student video · London', title:'The first moment London felt real.', text:'“I knew the landmarks, but walking between them made the city feel completely different from the version I had in my head.”', image:'https://a.storyblok.com/f/239725/1500x2100/b50e0739fd/01_gb_lon_gallery_activities_studentssightseeing.png/m/1371x1920/filters%3Aquality%2870%29', alt:'Students exploring London', action:'Play 21 sec', demo:'This short student clip would play here.' },
+      'london-audio': { role:'Tour Lead audio · London', title:'What students notice after the landmarks.', text:'“The transit, the pace, and the way people use public space usually become as memorable as the sites themselves.”', image:'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1000&q=80', alt:'London skyline', action:'Play 24 sec', demo:'Leo’s Tour Lead audio would play here.' },
+      'paris-image': { role:'Student image · Paris', title:'One artwork changed the whole day.', text:'A student captures the scale and detail of seeing art in place, not only on a classroom screen.', image:'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80', alt:'Paris and the Eiffel Tower', action:'View story', demo:'The student image story would open here.' },
+      'paris-audio': { role:'Educator audio · Paris', title:'When observation turns into interpretation.', text:'“Once students started comparing what they saw in the museum with the streets outside, the learning became much more personal.”', image:'https://a.storyblok.com/f/239725/1500x2000/f41bc5ca5e/04_fr_par_gallery_activities_studentssightseeingatarcdetriomphe.png', alt:'Students exploring Paris', action:'Play 26 sec', demo:'Maya’s educator audio would play here.' },
+      'rome-video': { role:'Student video · Rome', title:'History stopped feeling like a chapter.', text:'“Standing in the Forum made me understand how much of Roman life happened in public space.”', image:'https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1000&q=80', alt:'The Colosseum in Rome', action:'Play 19 sec', demo:'Jules’ Rome video would play here.' },
+      'rome-image': { role:'Tour Lead image · Rome', title:'A site becomes evidence.', text:'Students pause to compare what they learned in class with the scale, materials, and layout they can see around them.', image:'https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1000&q=80', alt:'Rome historic site', action:'View moment', demo:'The Rome image story would open here.' }
+    };
+    $$('.map-dot').forEach((button) => button.addEventListener('click', () => {
+      const story = mapStories[button.dataset.mapStory];
+      if (!story) return;
+      $$('.map-dot').forEach((dot) => dot.classList.toggle('is-active', dot === button));
+      $('#map-story-role').textContent = story.role;
+      $('#map-story-title').textContent = story.title;
+      $('#map-story-text').textContent = story.text;
+      const image = $('#map-story-image');
+      if (image) { image.src = story.image; image.alt = story.alt; }
+      const action = $('#map-story-action');
+      if (action) { action.textContent = story.action; action.dataset.demo = story.demo; }
+    }));
+
     $('#build-plan')?.addEventListener('click', () => {
       const subject = $('#subject-select')?.value || 'history';
       const plan = planData[subject];
