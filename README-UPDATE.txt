@@ -1,0 +1,1 @@
+Version 7 update: replace explore.html and add pitch.html at the repository root. Existing Version 6 styles.css and app.js can remain unchanged; the Version 7 page-specific changes are self-contained in these two HTML files.
