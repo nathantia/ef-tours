@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -7,7 +7,7 @@
 <meta content="An AI-assisted EF Tours discovery concept led by student interests and traveler voice." name="description"/>
 <title>Discover Trips · EF Tours Concept</title>
 <link href="styles.css" rel="stylesheet"/>
-</head>
+<style id="v7-page-styles">.smart-search-hero .search-question{font-size:24px;line-height:1.15;letter-spacing:-.025em;margin-bottom:14px;color:var(--ink)}.trip-toolbar{display:grid;gap:22px;margin:0 0 28px;padding:0 0 24px;border-bottom:1px solid var(--line)}.trip-toolbar-left{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.filter-icon-button,.filter-pill{border:1.5px solid var(--ink);background:#fff;color:var(--ink);height:48px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:800;cursor:pointer}.filter-icon-button{width:48px;font-size:19px}.filter-pill{padding:0 20px;font-size:14px}.filter-pill:hover,.filter-pill.is-active{background:var(--ink);color:#fff}.trip-toolbar-meta{display:flex;align-items:center;justify-content:space-between;gap:18px;color:var(--muted)}.tour-count{font-size:14px}.sort-control{display:flex;align-items:center;gap:10px;color:var(--ink);font-size:14px;font-weight:800}.sort-control select{border:0;background:#fff;color:var(--muted);padding:6px}.trip-card-rich .trip-card-copy{padding-bottom:22px}.story-strip-heading h2{max-width:880px}.how-section{padding:94px 0 104px;background:#fff}.how-heading{text-align:center;max-width:900px;margin:0 auto 58px}.how-heading h2{font-size:64px;margin-bottom:18px}.how-heading p{font-size:18px;line-height:1.55;color:var(--ink-2);margin:0 auto;max-width:760px}.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:42px}.how-card{text-align:center;padding:6px 24px 10px}.how-icon{width:96px;height:96px;margin:0 auto 22px;display:grid;place-items:center;color:var(--blue);font-size:56px}.how-step{display:block;color:var(--blue);font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}.how-card h3{font-size:25px;margin-bottom:14px}.how-card p{font-size:16px;line-height:1.55;color:var(--ink-2);margin:0 auto 22px;max-width:360px}.how-link{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:900;color:var(--blue)}@media(max-width:820px){.trip-toolbar-meta{align-items:flex-start;flex-direction:column}.how-grid{grid-template-columns:1fr;gap:46px}.how-heading h2{font-size:48px}}@media(max-width:560px){.smart-search-hero .search-question{font-size:21px}.filter-pills{display:flex;gap:8px;overflow-x:auto;width:100%}.filter-pill{flex:0 0 auto}.how-section{padding:72px 0}}</style></head>
 <body data-page="explore">
 <a class="skip-link" href="#main">Skip to main content</a>
 <div class="prototype-ribbon"><span class="dot"></span> Concept 01 · Student-led discovery · AI matching simulated locally</div>
@@ -31,13 +31,13 @@
 <div class="container explore-hero-grid is-search-right">
 <div class="explore-copy">
 <p class="eyebrow">Student-led discovery</p>
-<h1>Start with what would make you want to go.</h1>
-<p class="lede">Tell EF what interests you. AI narrows hundreds of tours to a few strong matches and explains why each one fits.</p>
+<h1>Find the tour that fits you.</h1>
+<p class="lede">Tell EF what you want to experience, learn, or explore. AI narrows hundreds of tours to a few strong matches and explains why each one fits.</p>
 </div>
 <div class="search-panel">
 <form class="smart-search smart-search-hero" id="smart-search">
-<p class="panel-kicker">AI trip matcher</p>
-<label for="trip-prompt">What do you want to see, try, or understand?</label>
+
+<label class="search-question" for="trip-prompt">What do you want to see, try, or understand?</label>
 <textarea id="trip-prompt" name="trip-prompt" rows="4">I want art, food, history I can actually see, and a first international trip that feels manageable.</textarea>
 <div aria-label="Example searches" class="prompt-examples">
 <span>Try:</span>
@@ -59,13 +59,35 @@
 <h2 data-results-title="">Trips for food, history, and confidence.</h2>
 <p class="results-summary" data-results-summary="">Recommendations shaped around what you want to experience and become.</p>
 </div>
-<div aria-label="See the same trips through different audiences" class="audience-switcher">
-<p>See the same trips through</p>
+<div aria-label="See trips through a different lens" class="audience-switcher">
+<p>See trips through a different lens</p>
 <div aria-label="Audience selector" class="audience-tabs" role="tablist">
 <button aria-selected="true" class="audience-tab is-active" data-audience="student" role="tab" type="button">Student</button>
 <button aria-selected="false" class="audience-tab" data-audience="parent" role="tab" type="button">Parent</button>
 <button aria-selected="false" class="audience-tab" data-audience="educator" role="tab" type="button">Educator</button>
 </div>
+</div>
+</div>
+
+<div aria-label="Trip filters and sorting" class="trip-toolbar">
+<div class="trip-toolbar-left">
+<button aria-label="Open filters" class="filter-icon-button" data-demo="Additional trip filters would open here." type="button">☷</button>
+<div aria-label="Quick filters" class="filter-pills" role="group">
+<button class="filter-pill" data-filter="continents" type="button">◉ <span>Continents</span></button>
+<button class="filter-pill" data-filter="countries" type="button">⚑ <span>Countries</span></button>
+<button class="filter-pill" data-filter="cities" type="button">⌖ <span>Cities</span></button>
+</div>
+</div>
+<div class="trip-toolbar-meta">
+<span class="tour-count">Showing 21 Tours</span>
+<label class="sort-control">Sort by
+      <select aria-label="Sort trips" id="trip-sort">
+<option value="featured">Featured</option>
+<option value="duration-short">Duration: shortest</option>
+<option value="duration-long">Duration: longest</option>
+<option value="az">A–Z</option>
+</select>
+</label>
 </div>
 </div>
 <div class="trip-grid trip-grid-cards" id="trip-grid">
@@ -78,7 +100,7 @@
 <p class="trip-kicker">Most popular · Europe</p><h3>London, Paris &amp; Rome</h3>
 <p class="trip-meta">10 days <span>3 countries</span> <span>First-time favorite</span></p>
 <div class="why-box"><span>Why you’ll love it</span><p data-why=""></p></div>
-<div class="traveler-audio"><button aria-label="Play Maya's 24-second educator perspective" class="audio-play" data-audio-name="Maya" data-audio-role="Educator" type="button"><span>▶</span></button><div><strong>Hear Maya’s take</strong><p>“By Rome, students were volunteering to navigate and explain what they noticed.”</p><small>Educator audio · 24 sec</small></div></div>
+
 <div class="card-footer"><a class="btn btn-primary btn-small" href="trip.html">See the trip</a><button class="share-link" data-demo="A private trip link would be ready to share." type="button">Share</button></div>
 </div>
 </article>
@@ -91,7 +113,7 @@
 <p class="trip-kicker">History &amp; culture · Europe</p><h3>Italy &amp; Greece</h3>
 <p class="trip-meta">11 days <span>2 countries</span> <span>Ancient worlds</span></p>
 <div class="why-box"><span>Why you’ll love it</span><p data-why=""></p></div>
-<div class="traveler-audio"><button aria-label="Play Jules's 19-second student perspective" class="audio-play" data-audio-name="Jules" data-audio-role="Student" type="button"><span>▶</span></button><div><strong>Hear Jules’ take</strong><p>“History stopped feeling like a chapter.”</p><small>Student audio · 19 sec</small></div></div>
+
 <div class="card-footer"><button class="btn btn-primary btn-small" data-demo="This prototype includes one fully designed trip detail page." type="button">See the trip</button><button class="share-link" data-demo="A private trip link would be ready to share." type="button">Share</button></div>
 </div>
 </article>
@@ -104,7 +126,7 @@
 <p class="trip-kicker">Cities &amp; Alps · Europe</p><h3>Germany, Austria &amp; Switzerland</h3>
 <p class="trip-meta">10 days <span>3 countries</span> <span>City + nature</span></p>
 <div class="why-box"><span>Why you’ll love it</span><p data-why=""></p></div>
-<div class="traveler-audio"><button aria-label="Play Leo's 31-second Tour Lead perspective" class="audio-play" data-audio-name="Leo" data-audio-role="Tour Lead" type="button"><span>▶</span></button><div><strong>Hear Leo’s take</strong><p>“The landscape helps students see how geography shapes the way communities live.”</p><small>Tour Lead audio · 31 sec</small></div></div>
+
 <div class="card-footer"><button class="btn btn-primary btn-small" data-demo="This prototype includes one fully designed trip detail page." type="button">See the trip</button><button class="share-link" data-demo="A private trip link would be ready to share." type="button">Share</button></div>
 </div>
 </article>
@@ -117,7 +139,7 @@
 <p class="trip-kicker">Tradition &amp; technology · Asia</p><h3>Japan: Land of the Rising Sun</h3>
 <p class="trip-meta">11 days <span>1 country</span> <span>Tokyo to Kyoto</span></p>
 <div class="why-box"><span>Why you’ll love it</span><p data-why=""></p></div>
-<div class="traveler-audio"><button aria-label="Play Maya's 22-second educator perspective" class="audio-play" data-audio-name="Maya" data-audio-role="Educator" type="button"><span>▶</span></button><div><strong>Hear Maya’s take</strong><p>“Students started noticing how design and etiquette reflect shared values.”</p><small>Educator audio · 22 sec</small></div></div>
+
 <div class="card-footer"><button class="btn btn-primary btn-small" data-demo="This prototype includes one fully designed trip detail page." type="button">See the trip</button><button class="share-link" data-demo="A private trip link would be ready to share." type="button">Share</button></div>
 </div>
 </article>
@@ -130,7 +152,7 @@
 <p class="trip-kicker">Ecology &amp; adventure · Latin America</p><h3>Costa Rica: A Touch of the Tropics</h3>
 <p class="trip-meta">9 days <span>1 country</span> <span>Nature in action</span></p>
 <div class="why-box"><span>Why you’ll love it</span><p data-why=""></p></div>
-<div class="traveler-audio"><button aria-label="Play Jules's 27-second student perspective" class="audio-play" data-audio-name="Jules" data-audio-role="Student" type="button"><span>▶</span></button><div><strong>Hear Jules’ take</strong><p>“Our ecology unit was suddenly everywhere.”</p><small>Student audio · 27 sec</small></div></div>
+
 <div class="card-footer"><button class="btn btn-primary btn-small" data-demo="This prototype includes one fully designed trip detail page." type="button">See the trip</button><button class="share-link" data-demo="A private trip link would be ready to share." type="button">Share</button></div>
 </div>
 </article>
@@ -143,7 +165,7 @@
 <p class="trip-kicker">Living history &amp; nature · Latin America</p><h3>Peru: Land of the Inca</h3>
 <p class="trip-meta">9 days <span>1 country</span> <span>Culture + landscape</span></p>
 <div class="why-box"><span>Why you’ll love it</span><p data-why=""></p></div>
-<div class="traveler-audio"><button aria-label="Play Leo's 26-second Tour Lead perspective" class="audio-play" data-audio-name="Leo" data-audio-role="Tour Lead" type="button"><span>▶</span></button><div><strong>Hear Leo’s take</strong><p>“The landscape changes how students read the history before anyone explains it.”</p><small>Tour Lead audio · 26 sec</small></div></div>
+
 <div class="card-footer"><button class="btn btn-primary btn-small" data-demo="This prototype includes one fully designed trip detail page." type="button">See the trip</button><button class="share-link" data-demo="A private trip link would be ready to share." type="button">Share</button></div>
 </div>
 </article>
@@ -153,7 +175,7 @@
 <section class="browse-section browse-destinations">
 <div class="container">
 <div class="browse-heading">
-<div><p class="eyebrow">Explore destinations</p><h2>Start with a part of the world.</h2></div>
+<div><p class="eyebrow">Explore destinations</p><h2>Start with a destination.</h2></div>
 <p>Move from a broad sense of possibility to the places, cultures, and experiences that feel most compelling.</p>
 </div>
 <div class="region-grid">
@@ -185,7 +207,7 @@
 </section>
 <section class="story-strip-section">
 <div class="container">
-<div class="story-strip-heading"><h2>Explore through people,<br/>not just pins.</h2><p>Short, lightly edited student perspectives help a prospective traveler picture the moments between the landmarks.</p></div>
+<div class="story-strip-heading"><h2>Experience EF through people,<br/>not pins.</h2><p>Short, lightly edited student perspectives help a prospective traveler picture the moments between the landmarks.</p></div>
 <div class="story-strip-grid">
 <article class="story-card photo-shell" data-fallback="Student perspective video"><img alt="Student group with the London Eye in the background" data-photo="" loading="lazy" src="https://a-us.storyblok.com/f/1021279/1440x757/25f35d28a8/group-photo.png/m/1200x630/filters%3Aquality%2870%29"/><button class="play-chip" data-demo="A short student perspective clip would open here." type="button">▶</button><div class="story-copy"><strong>“What I wish I knew before my first flight.”</strong><span>Maya · first time abroad · 24 sec</span></div></article>
 <article class="story-card photo-shell" data-fallback="Student perspective video"><img alt="Students visiting a historic site in Europe" data-photo="" loading="lazy" src="https://a.storyblok.com/f/239725/1500x2000/f41bc5ca5e/04_fr_par_gallery_activities_studentssightseeingatarcdetriomphe.png"/><button class="play-chip" data-demo="A short student perspective clip would open here." type="button">▶</button><div class="story-copy"><strong>“The moment ancient Rome stopped feeling ancient.”</strong><span>Jules · history fan · 19 sec</span></div></article>
@@ -194,9 +216,39 @@
 </div>
 </div>
 </section>
-<section class="handoff-section">
-<div class="container handoff-card"><div><p class="eyebrow light">A better family conversation</p><h2>Students begin with genuine interest. EF adds the learning, support, and practical details.</h2></div><a class="btn btn-light" href="trip.html">See the Understand concept <span aria-hidden="true">→</span></a></div>
+
+<section class="how-section">
+<div class="container">
+<div class="how-heading">
+<h2>How it works.</h2>
+<p>From finding the right experience to getting your community behind it, EF helps turn interest into a trip students are ready to take.</p>
+</div>
+<div class="how-grid">
+<article class="how-card">
+<div aria-hidden="true" class="how-icon">⌖</div>
+<span class="how-step">01</span>
+<h3>Discover what fits</h3>
+<p>Explore destinations, interests, and learning goals to find a trip that feels right for the group.</p>
+<a class="how-link" href="#results">Explore trips <span>→</span></a>
+</article>
+<article class="how-card">
+<div aria-hidden="true" class="how-icon">◎</div>
+<span class="how-step">02</span>
+<h3>Make the trip meaningful</h3>
+<p>Understand what students will experience, what they can learn, and how the trip can connect back to the classroom.</p>
+<a class="how-link" href="trip.html">See trip details <span>→</span></a>
+</article>
+<article class="how-card how-card-pitch">
+<div aria-hidden="true" class="how-icon">⚑</div>
+<span class="how-step">03</span>
+<h3>Pitch the trip</h3>
+<p>Turn the tour into a clear, shareable case for the people who need to say yes.</p>
+<a class="how-link" href="pitch.html">Build a pitch packet <span>→</span></a>
+</article>
+</div>
+</div>
 </section>
+
 </main>
 <footer class="site-footer">
 <div class="container footer-grid">
@@ -206,5 +258,5 @@
 </footer>
 <div aria-live="polite" class="toast" role="status"></div>
 <script src="app.js"></script>
-</body>
+<script id="v7-page-js">document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.filter-pill').forEach(b=>b.addEventListener('click',()=>b.classList.toggle('is-active')));const sort=document.getElementById('trip-sort'),grid=document.getElementById('trip-grid');if(sort&&grid){sort.addEventListener('change',()=>{const cards=[...grid.querySelectorAll('.trip-card')],days=c=>parseInt(c.querySelector('.trip-meta')?.textContent||'0',10)||0;if(sort.value==='duration-short')cards.sort((a,b)=>days(a)-days(b));else if(sort.value==='duration-long')cards.sort((a,b)=>days(b)-days(a));else if(sort.value==='az')cards.sort((a,b)=>a.querySelector('h3').textContent.localeCompare(b.querySelector('h3').textContent));else return;cards.forEach(c=>grid.appendChild(c));});}}</script></body>
 </html>
