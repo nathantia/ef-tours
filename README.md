@@ -1,8 +1,12 @@
-# EF Tours Journey Prototype · Version 9
+# EF Tours Journey Prototype · Version 10
 
-Discover page refinements:
-- Re-constrained filters and trip cards to the site content width.
-- Removed “readiness” from the collections description.
-- Replaced the How it works illustrations with the supplied EF-style SVG artwork.
-- Updated the Choosing your new tour copy.
-- Shortened the Spreading the word copy and added CTAs to all three How it works items.
+Version 10 focuses on the Understand / Trip Detail page itinerary.
+
+- Replaces city summary cards with a full 10-day itinerary.
+- Adds a sticky journey rail inspired by long-form travel detail pages.
+- Adds Experience / Notice / Take it further tabs to every day.
+- Weaves EF learning themes into the itinerary without duplicating the standalone EF Method component.
+- Adds contextual student, educator, and Tour Lead audio moments on selected days.
+- Adds scroll-based route highlighting in the sticky rail.
+
+Open `trip.html` to review the new itinerary experience.

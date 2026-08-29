@@ -355,6 +355,32 @@
       }
     };
 
+    $$('[data-day-tabs]').forEach((group) => {
+      const tabs = $$('.day-tab', group);
+      const panels = $$('.day-tab-panel', group);
+      tabs.forEach((tab) => tab.addEventListener('click', () => {
+        const target = tab.dataset.tab;
+        tabs.forEach((item) => {
+          const active = item === tab;
+          item.classList.toggle('is-active', active);
+          item.setAttribute('aria-selected', String(active));
+        });
+        panels.forEach((panel) => panel.classList.toggle('is-active', panel.dataset.panel === target));
+      }));
+    });
+
+    const dayCards = $$('.day-card[data-city]');
+    const railStops = $$('.rail-stop[data-rail-city]');
+    if ('IntersectionObserver' in window && dayCards.length && railStops.length) {
+      const cityObserver = new IntersectionObserver((entries) => {
+        const visible = entries.filter((entry) => entry.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (!visible) return;
+        const city = visible.target.dataset.city;
+        railStops.forEach((stop) => stop.classList.toggle('is-active', stop.dataset.railCity === city));
+      }, { rootMargin: '-18% 0px -62% 0px', threshold: [0,.2,.4,.6] });
+      dayCards.forEach((card) => cityObserver.observe(card));
+    }
+
     $('#build-plan')?.addEventListener('click', () => {
       const subject = $('#subject-select')?.value || 'history';
       const plan = planData[subject];
