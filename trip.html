@@ -27,19 +27,6 @@
   </header>
 
   <main id="main">
-    <nav class="trip-subnav" aria-label="Trip detail sections">
-      <div class="container trip-subnav-inner">
-        <div class="trip-subnav-links">
-          <a href="#overview" class="is-active" data-subnav-link>Overview</a>
-          <a href="#itinerary" data-subnav-link>Itinerary</a>
-          <a href="#learning" data-subnav-link>Learning</a>
-          <a href="#trip-moments" data-subnav-link>Trip moments</a>
-          <a href="#price" data-subnav-link>Price</a>
-          <a href="#faqs" data-subnav-link>FAQs</a>
-        </div>
-        <a class="btn btn-primary btn-small trip-subnav-cta" href="#price">Start planning</a>
-      </div>
-    </nav>
     <section class="trip-hero" id="overview">
       <img data-photo src="https://a.storyblok.com/f/336931/2880x1270/c6263908ac/travel-philosophy-hero-desk.jpg/m/3840x1693/filters%3Ablur%280%29" alt="Students traveling together in Europe">
       <div class="container trip-hero-inner">
@@ -60,12 +47,20 @@
       </div>
     </section>
 
-    <div class="student-voice-bar">
-      <div class="container student-voice-inner">
-        <blockquote>“In London I was nervous to order lunch. In Rome I was the one helping friends find the meeting point.”</blockquote>
-        <cite>Maya · 11th grade</cite>
+    <nav class="trip-subnav" aria-label="Trip detail sections">
+      <div class="container trip-subnav-inner">
+        <div class="trip-subnav-links">
+          <a href="#overview" class="is-active" data-subnav-link>Overview</a>
+          <a href="#itinerary" data-subnav-link>Itinerary</a>
+          <a href="#learning" data-subnav-link>Learning</a>
+          <a href="#trip-moments" data-subnav-link>Trip moments</a>
+          <a href="#price" data-subnav-link>Price</a>
+          <a href="#faqs" data-subnav-link>FAQs</a>
+        </div>
+        <a class="btn btn-primary btn-small trip-subnav-cta" href="#price">Start planning</a>
       </div>
-    </div>
+    </nav>
+
 
     <section class="section itinerary-section" id="itinerary">
       <div class="container">
@@ -254,22 +249,23 @@
           <p>Follow the route and open moments from students, educators, and Tour Leads along the way.</p>
         </div>
         <div class="trip-map-shell reveal">
-          <div class="trip-map" role="img" aria-label="Minimal route map connecting London, Paris, and Rome with clickable trip moments">
-            <svg viewBox="0 0 960 520" aria-hidden="true" class="trip-map-art">
-              <rect x="0" y="0" width="960" height="520" rx="28" fill="#eef5fb"/>
-              <path d="M145 148 C245 115 315 150 405 210 S560 325 700 382" fill="none" stroke="#90b9df" stroke-width="4" stroke-dasharray="7 10"/>
-              <path d="M160 120 C240 95 338 120 424 196 C493 256 575 326 712 360" fill="none" stroke="#d5e6f4" stroke-width="56" stroke-linecap="round" opacity=".65"/>
-              <circle cx="160" cy="120" r="13" fill="#0873e6"/><circle cx="424" cy="196" r="13" fill="#0873e6"/><circle cx="712" cy="360" r="13" fill="#0873e6"/>
-              <text x="125" y="90" font-size="26" font-family="Arial" font-weight="800" fill="#0b1522">London</text>
-              <text x="392" y="164" font-size="26" font-family="Arial" font-weight="800" fill="#0b1522">Paris</text>
-              <text x="680" y="330" font-size="26" font-family="Arial" font-weight="800" fill="#0b1522">Rome</text>
+          <div class="trip-map real-map" role="img" aria-label="Map of Western Europe connecting London, Paris, and Rome with clickable trip moments">
+            <img class="real-map-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Europe_blank_map_with_borders_and_capital_cities.png/960px-Europe_blank_map_with_borders_and_capital_cities.png" alt="Political map of Europe used as the trip route background">
+            <div class="map-tint" aria-hidden="true"></div>
+            <svg viewBox="0 0 960 520" aria-hidden="true" class="trip-map-route">
+              <path d="M245 118 C315 148 340 165 385 205 S515 300 602 382" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" opacity=".72"/>
+              <path d="M245 118 C315 148 340 165 385 205 S515 300 602 382" fill="none" stroke="#0873e6" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 10"/>
             </svg>
-            <button class="map-dot map-dot-london-1 is-active" style="left:17%;top:34%" data-map-story="london-video" aria-label="Open London student video"><span>▶</span></button>
-            <button class="map-dot map-dot-london-2" style="left:27%;top:27%" data-map-story="london-audio" aria-label="Open London Tour Lead audio"><span>♪</span></button>
-            <button class="map-dot map-dot-paris-1" style="left:46%;top:47%" data-map-story="paris-image" aria-label="Open Paris image story"><span>●</span></button>
-            <button class="map-dot map-dot-paris-2" style="left:54%;top:40%" data-map-story="paris-audio" aria-label="Open Paris educator audio"><span>♪</span></button>
-            <button class="map-dot map-dot-rome-1" style="left:72%;top:69%" data-map-story="rome-video" aria-label="Open Rome student video"><span>▶</span></button>
-            <button class="map-dot map-dot-rome-2" style="left:79%;top:61%" data-map-story="rome-image" aria-label="Open Rome image story"><span>●</span></button>
+            <span class="map-city-label" style="left:22%;top:17%">London</span>
+            <span class="map-city-label" style="left:39%;top:34%">Paris</span>
+            <span class="map-city-label" style="left:61%;top:70%">Rome</span>
+            <button class="map-dot is-active" style="left:24%;top:25%" data-map-story="london-video" aria-label="Open London student video"><span>▶</span></button>
+            <button class="map-dot" style="left:29%;top:20%" data-map-story="london-audio" aria-label="Open London Tour Lead audio"><span>♪</span></button>
+            <button class="map-dot" style="left:39%;top:40%" data-map-story="paris-image" aria-label="Open Paris image story"><span>●</span></button>
+            <button class="map-dot" style="left:44%;top:34%" data-map-story="paris-audio" aria-label="Open Paris educator audio"><span>♪</span></button>
+            <button class="map-dot" style="left:59%;top:76%" data-map-story="rome-video" aria-label="Open Rome student video"><span>▶</span></button>
+            <button class="map-dot" style="left:64%;top:68%" data-map-story="rome-image" aria-label="Open Rome image story"><span>●</span></button>
+            <span class="map-attribution">Map: Grnz26 / Wikimedia Commons · CC BY 4.0</span>
           </div>
           <aside class="map-story-card" aria-live="polite">
             <div class="map-story-media photo-shell" data-fallback="Student story"><img id="map-story-image" data-photo src="https://a.storyblok.com/f/239725/1500x2100/b50e0739fd/01_gb_lon_gallery_activities_studentssightseeing.png/m/1371x1920/filters%3Aquality%2870%29" alt="Students exploring London"></div>
@@ -291,16 +287,16 @@
           <div class="price-cta"><button class="btn btn-primary" type="button" data-demo="A personalized quote flow would begin here.">Get your personalized quote</button><small>*Illustrative price for prototype review. Restrictions apply.</small></div>
         </div>
         <div class="price-support-grid reveal">
-          <button class="price-support-card" type="button" data-demo="Payment plan information would open here."><span class="support-icon">□</span><span><strong>Payment plan options</strong><small>Pay over time interest-free or pay all at once.</small></span><b>→</b></button>
-          <button class="price-support-card" type="button" data-demo="Fundraising information would open here."><span class="support-icon">▰</span><span><strong>Fundraising</strong><small>Every traveler receives a no-fee donation page.</small></span><b>→</b></button>
-          <button class="price-support-card" type="button" data-demo="Scholarship information would open here."><span class="support-icon">◉</span><span><strong>Global Citizen Scholarship</strong><small>EF awards scholarships to student travelers each year.</small></span><b>→</b></button>
+          <button class="price-support-card" type="button" data-demo="Payment plan information would open here."><span class="support-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18M8 15h2M14 15h2"/></svg></span><span><strong>Payment plan options</strong><small>Pay over time interest-free or pay all at once.</small></span><b>→</b></button>
+          <button class="price-support-card" type="button" data-demo="Fundraising information would open here."><span class="support-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/><path d="M12 5.6 9.7 7.9a2 2 0 1 0 2.8 2.8l1.1-1.1a2 2 0 0 1 2.8 0l2.2 2.2"/></svg></span><span><strong>Fundraising</strong><small>Every traveler receives a no-fee donation page.</small></span><b>→</b></button>
+          <button class="price-support-card" type="button" data-demo="Scholarship information would open here."><span class="support-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg></span><span><strong>Global Citizen Scholarship</strong><small>EF awards scholarships to student travelers each year.</small></span><b>→</b></button>
         </div>
       </div>
     </section>
 
     <section class="section faq-section" id="faqs">
       <div class="container faq-layout reveal">
-        <div><p class="eyebrow">Planning questions</p><h2>What families usually ask.</h2></div>
+        <div class="faq-intro"><p class="eyebrow">Planning questions</p><h2>What families usually ask.</h2><p>Need to make the case for this experience? Turn the trip into a clear, shareable packet for a parent, teacher, or school leader.</p><a class="btn btn-primary" href="pitch.html">Pitch the trip <span aria-hidden="true">→</span></a></div>
         <div class="faq-list">
           <details open><summary>Who supports students while they travel?</summary><p>The group travels with its educator and an EF Tour Director, with additional local support built into the itinerary.</p></details>
           <details><summary>What is included in the trip price?</summary><p>For this concept, transportation, hotels, scheduled activities, and guided support are presented as coordinated parts of the experience.</p></details>
