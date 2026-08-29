@@ -1,7 +1,7 @@
-# EF Tours Journey Prototype · Version 13
+# EF Tours Journey Prototype · Version 14
 
-Latest updates:
-- Student dashboard hero now says “Welcome Back” and “Maya, what did the trip teach you?”
-- Added a private-feeling “Your group experience” media component before reflection.
-- Discover audience control now reads “Choose a perspective.”
-- Trip-card recommendation labels switch between “For students,” “For parents,” and “For educators.”
+Updates:
+- Discover hero changed to “Every great trip starts with an idea.”
+- AI prompt changed to “What does the ideal trip look like?”
+- Added an “Explore another way” quick-browse band between hero and listings.
+- Quick links include Collections, All destinations, Europe, Latin America, Asia, Africa, South Pacific, and US & Canada.
