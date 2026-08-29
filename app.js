@@ -295,19 +295,23 @@
       showToast(saved ? 'Removed from your shortlist.' : 'Saved to your shortlist.');
     }));
 
-    $$('.audio-play').forEach((button) => button.addEventListener('click', () => {
-      const wasPlaying = button.classList.contains('is-playing');
-      $$('.audio-play').forEach((item) => { item.classList.remove('is-playing'); item.querySelector('span').textContent = '▶'; });
-      if (!wasPlaying) {
-        button.classList.add('is-playing');
-        button.querySelector('span').textContent = 'Ⅱ';
-        showToast(`Playing ${button.dataset.audioName}’s illustrative ${button.dataset.audioRole || 'traveler'} perspective.`);
-        setTimeout(() => {
-          button.classList.remove('is-playing');
-          button.querySelector('span').textContent = '▶';
-        }, 3200);
-      }
+
+    $$('.filter-pill').forEach((button) => button.addEventListener('click', () => {
+      const active = button.classList.toggle('is-active');
+      showToast(active ? `${button.textContent.trim()} filter selected.` : `${button.textContent.trim()} filter cleared.`);
     }));
+
+    $('#trip-sort')?.addEventListener('change', (event) => {
+      const cards = $$('.trip-card', grid);
+      const value = event.target.value;
+      const dayCount = (card) => parseInt($('.trip-meta', card)?.textContent || '0', 10) || 0;
+      if (value === 'duration-short') cards.sort((a,b) => dayCount(a)-dayCount(b));
+      if (value === 'duration-long') cards.sort((a,b) => dayCount(b)-dayCount(a));
+      if (value === 'az') cards.sort((a,b) => $('h3',a).textContent.localeCompare($('h3',b).textContent));
+      if (value === 'featured') applyMatches(input.value, false);
+      else cards.forEach(card => grid.appendChild(card));
+      showToast(`Trips sorted by ${event.target.options[event.target.selectedIndex].text}.`);
+    });
 
     const savedQuery = safeStorageGet('efV6Interest');
     if (savedQuery) {
@@ -463,6 +467,104 @@
     });
   }
 
+
+  function initPitch() {
+    if (document.body.dataset.page !== 'pitch') return;
+    const creatorButtons = $$('[data-creator]');
+    const audienceButtons = $$('[data-pitch-audience]');
+    const emphasisInputs = $$('input[name="pitch-focus"]');
+    const packetAudience = $('#packet-audience');
+    const packetCreator = $('#packet-creator');
+    const packetHeadline = $('#packet-headline');
+    const packetWhy = $('#packet-why');
+    const packetLearning = $('#packet-learning');
+    const packetSupport = $('#packet-support');
+    const packetAsk = $('#packet-ask');
+    let creator = 'student';
+    let audience = 'parent';
+
+    const audienceData = {
+      parent: {
+        label: 'Parent',
+        headline: 'Why London, Paris & Rome is worth saying yes to.',
+        why: 'I want to experience the art, history, food, and daily life we study from a distance—and do it with my teacher, classmates, and EF support around us.',
+        learning: 'The itinerary connects major sites to history, art, civics, and culture, with opportunities to use trip observations in class after returning.',
+        support: 'EF coordinates the group travel experience, Tour Director support, hotels, transportation, and planned activities alongside the educator leading the group.',
+        ask: 'Take a look at the trip with me and talk through the cost, timing, and what would make you comfortable saying yes.'
+      },
+      teacher: {
+        label: 'Teacher',
+        headline: 'A trip students are ready to get behind.',
+        why: 'Students are interested in a trip that makes history and culture tangible while giving them a supported first international experience.',
+        learning: 'London, Paris, and Rome create natural opportunities for comparison across art, government, history, language, and public life.',
+        support: 'EF can help turn student interest into a structured tour, with planning support and materials for building family participation.',
+        ask: 'Explore whether this tour could fit your learning goals and what it would take to bring a group together.'
+      },
+      school: {
+        label: 'School / administrator',
+        headline: 'A global learning experience with a clear educational case.',
+        why: 'The tour gives students direct exposure to historic, civic, artistic, and cultural contexts that are difficult to reproduce in a classroom.',
+        learning: 'Students can gather observations and evidence on tour, then apply them through history, civics, art, language, or interdisciplinary classroom work.',
+        support: 'The experience is organized around an educator-led group with EF travel planning and on-tour support built around the itinerary.',
+        ask: 'Review the educational goals, student-development value, and group structure as part of the school approval process.'
+      }
+    };
+
+    function selectOne(buttons, selected, attr) {
+      buttons.forEach((button) => {
+        const active = button.getAttribute(attr) === selected;
+        button.classList.toggle('is-selected', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+    }
+
+    function renderPacket() {
+      const data = audienceData[audience];
+      if (packetAudience) packetAudience.textContent = `Prepared for: ${data.label}`;
+      if (packetCreator) packetCreator.textContent = `Prepared by: ${creator === 'student' ? 'Student' : 'Educator'}`;
+      if (packetHeadline) packetHeadline.textContent = data.headline;
+      if (packetWhy) packetWhy.textContent = data.why;
+      if (packetLearning) packetLearning.textContent = data.learning;
+      if (packetSupport) packetSupport.textContent = data.support;
+      if (packetAsk) packetAsk.textContent = data.ask;
+    }
+
+    creatorButtons.forEach((button) => button.addEventListener('click', () => {
+      creator = button.dataset.creator;
+      selectOne(creatorButtons, creator, 'data-creator');
+      renderPacket();
+    }));
+    audienceButtons.forEach((button) => button.addEventListener('click', () => {
+      audience = button.dataset.pitchAudience;
+      selectOne(audienceButtons, audience, 'data-pitch-audience');
+      renderPacket();
+    }));
+    emphasisInputs.forEach((input) => input.addEventListener('change', renderPacket));
+
+    $('#generate-packet')?.addEventListener('click', () => {
+      renderPacket();
+      $('.packet-preview')?.scrollIntoView({behavior:'smooth',block:'start'});
+      showToast('Pitch packet tailored to your audience.');
+    });
+
+    $('#download-packet')?.addEventListener('click', () => {
+      const data = audienceData[audience];
+      const html = `<!doctype html><html><head><meta charset="utf-8"><title>EF Tours pitch packet</title><style>body{font-family:Arial,sans-serif;max-width:760px;margin:48px auto;padding:0 28px;color:#0b1522;line-height:1.55}h1{font-size:38px}h2{font-size:18px;margin-top:28px}small{color:#617083}</style></head><body><small>Independent interview concept by Nathan Tia</small><h1>${data.headline}</h1><p><strong>London, Paris & Rome · 10 days · 3 countries</strong></p><h2>Why this trip</h2><p>${data.why}</p><h2>What students can learn</h2><p>${data.learning}</p><h2>How EF supports the experience</h2><p>${data.support}</p><h2>The ask</h2><p>${data.ask}</p></body></html>`;
+      const blob = new Blob([html], {type:'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `ef-tour-pitch-${audience}.html`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      showToast('Pitch packet downloaded.');
+    });
+
+    renderPacket();
+  }
+
   initNavigation();
   initReveal();
   initPhotos();
@@ -470,4 +572,5 @@
   initExplore();
   initTrip();
   initDashboard();
+  initPitch();
 })();
