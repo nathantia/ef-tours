@@ -555,3 +555,15 @@ h3{font-size:28px;margin-bottom:12px}
 @media(max-width:560px){
   .search-action-row{align-items:stretch;flex-direction:column}.search-action-row .btn{width:100%}.search-conversation-head{grid-template-columns:1fr}.search-orbit{display:none}.smart-search-hero .search-question{font-size:22px}.audience-switcher-inline{width:100%;flex-direction:column;align-items:flex-start}.audience-switcher-inline .audience-tabs{width:100%}.story-strip-heading h2{font-size:40px}
 }
+
+
+/* Version 9 Discover refinements */
+.results-section>.container{max-width:1180px}
+.trip-toolbar,.trip-grid-cards{width:100%;max-width:1180px;margin-left:auto;margin-right:auto}
+.how-illustration img{width:100%;height:100%;object-fit:contain;display:block}
+.how-grid-ef .how-link{display:inline-flex;margin-top:4px}
+@media(min-width:821px){
+  .trip-toolbar-controls{display:grid;grid-template-columns:auto 1fr auto;align-items:center}
+  .trip-toolbar-left{grid-column:1}
+  .audience-switcher-inline{grid-column:3}
+}
