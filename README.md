@@ -1,7 +1,5 @@
-# EF Tours Journey Prototype · Version 14
+# EF Tours Journey Prototype · Version 15
 
-Updates:
-- Discover hero changed to “Every great trip starts with an idea.”
-- AI prompt changed to “What does the ideal trip look like?”
-- Added an “Explore another way” quick-browse band between hero and listings.
-- Quick links include Collections, All destinations, Europe, Latin America, Asia, Africa, South Pacific, and US & Canada.
+Version 15 replaces the quick-browse navigation strip on the Discover page with visual editorial discovery cards for Collections, All destinations, and major regions.
+
+Open `index.html` directly in a browser. No build step is required.
