@@ -714,3 +714,6 @@ h3{font-size:28px;margin-bottom:12px}
 @media(max-width:560px){
   .discovery-card-band .container::before,.discovery-card-band .container::after{width:34px;opacity:.82}
 }
+
+/* Japan v17 */
+.roundtrip-video{margin-top:24px;border-top:1px solid var(--line);padding-top:24px;display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:center}.roundtrip-copy h4{font-size:28px;line-height:1.05;margin:0 0 10px;letter-spacing:-.03em}.roundtrip-copy>p:not(.eyebrow){color:var(--muted);margin:0}.roundtrip-embed{aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#000}.roundtrip-embed iframe{width:100%;height:100%;border:0}.japan-map-frame{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.82) saturate(.45) brightness(1.08);pointer-events:none}.return-card{border-color:#cddff2;background:linear-gradient(180deg,#fff 0%,#f7fbff 100%)}@media(max-width:760px){.roundtrip-video{grid-template-columns:1fr}.roundtrip-copy h4{font-size:24px}}

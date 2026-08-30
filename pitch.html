@@ -1,67 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="An EF Tours concept for generating a tailored pitch packet for parents, educators, and school leaders.">
-  <title>Pitch the Trip · EF Tours Concept</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="An EF Tours concept for generating a tailored pitch packet for parents, educators, and school leaders." name="description"/>
+<title>Pitch the Trip · EF Tours Concept</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body data-page="pitch">
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="prototype-ribbon"><span class="dot"></span> Connected concept · Pitch the trip · Packet generation simulated locally</div>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="EF Educational Tours concept home"><img class="brand-logo" src="ef-logo.svg" alt="EF logo"></a>
-      <nav class="primary-nav" aria-label="Primary navigation">
-        <a href="index.html">Overview</a><a href="explore.html">Discover</a><a href="trip.html">Understand</a><a href="dashboard.html">Reflect</a>
-      </nav>
-      <div class="header-actions"><a class="btn btn-secondary btn-small" href="explore.html">Back to Discover</a><button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button></div>
-    </div>
-  </header>
-  <main id="main">
-    <section class="pitch-hero">
-      <div class="container pitch-hero-grid">
-        <div>
-          <p class="eyebrow">Pitch the trip</p>
-          <h1>Turn interest into a case people can say yes to.</h1>
-          <p class="lede">Choose who is making the case and who needs to hear it. EF reshapes the same tour into the learning, support, and practical value that matters most to that audience.</p>
-        </div>
-        <figure class="pitch-hero-photo photo-shell" data-fallback="Students preparing for travel"><img data-photo src="https://a-us.storyblok.com/f/1021279/1440x757/25f35d28a8/group-photo.png/m/1600x840/filters%3Aquality%2870%29" alt="Students traveling together on an EF tour"></figure>
-      </div>
-    </section>
-    <section class="pitch-builder-section">
-      <div class="container pitch-layout">
-        <section class="pitch-builder">
-          <p class="eyebrow">Build your packet</p>
-          <h2>Start with the audience.</h2>
-          <div class="pitch-step">
-            <span class="pitch-step-number">1</span><div><h3>Who is building the pitch?</h3><div class="choice-row"><button type="button" class="choice-pill is-selected" data-creator="student" aria-pressed="true">Student</button><button type="button" class="choice-pill" data-creator="educator" aria-pressed="false">Educator</button></div></div>
-          </div>
-          <div class="pitch-step">
-            <span class="pitch-step-number">2</span><div><h3>Who needs to say yes?</h3><div class="choice-row"><button type="button" class="choice-pill is-selected" data-pitch-audience="parent" aria-pressed="true">Parent</button><button type="button" class="choice-pill" data-pitch-audience="teacher" aria-pressed="false">Teacher</button><button type="button" class="choice-pill" data-pitch-audience="school" aria-pressed="false">School / administrator</button></div></div>
-          </div>
-          <div class="pitch-step">
-            <span class="pitch-step-number">3</span><div><h3>What should the packet emphasize?</h3><div class="check-grid"><label><input type="checkbox" name="pitch-focus" checked> Learning outcomes</label><label><input type="checkbox" name="pitch-focus" checked> Safety & support</label><label><input type="checkbox" name="pitch-focus" checked> Student interest</label><label><input type="checkbox" name="pitch-focus"> Cost & planning</label><label><input type="checkbox" name="pitch-focus"> Classroom connection</label></div></div>
-          </div>
-          <button class="btn btn-primary" type="button" id="generate-packet">Build my pitch packet →</button>
-          <p class="ai-inline-note"><span class="ai-spark">✦</span><span>AI changes the emphasis and language for the audience without changing the facts of the tour.</span></p>
-        </section>
-        <aside class="packet-preview" aria-live="polite">
-          <div class="packet-topline"><img src="ef-logo.svg" alt="EF logo" class="packet-logo"><span>London, Paris & Rome</span></div>
-          <div class="packet-tags"><span id="packet-creator">Prepared by: Student</span><span id="packet-audience">Prepared for: Parent</span></div>
-          <h2 id="packet-headline">Why London, Paris & Rome is worth saying yes to.</h2>
-          <figure class="packet-photo photo-shell" data-fallback="London Paris Rome"><img data-photo src="https://a.storyblok.com/f/336931/2880x1270/c6263908ac/travel-philosophy-hero-desk.jpg/m/2400x1058/filters%3Ablur%280%29" alt="Students experiencing Europe together"></figure>
-          <div class="packet-block"><span>Why this trip</span><p id="packet-why"></p></div>
-          <div class="packet-block"><span>What students can learn</span><p id="packet-learning"></p></div>
-          <div class="packet-block"><span>How EF supports the experience</span><p id="packet-support"></p></div>
-          <div class="packet-block packet-ask"><span>The ask</span><p id="packet-ask"></p></div>
-          <button class="btn btn-dark btn-full" id="download-packet" type="button">Download pitch packet ↓</button>
-        </aside>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><img class="brand-logo" src="ef-logo.svg" alt="EF logo"></a><p>Independent interview concept by Nathan Tia. EF and related marks belong to their owners. Student names and quotes are illustrative.</p></div><div class="footer-links"><a href="index.html">Overview</a><a href="explore.html">Discover</a><a href="trip.html">Understand</a><a href="dashboard.html">Reflect</a></div></div></footer>
-  <div class="toast" role="status" aria-live="polite"></div><script src="app.js"></script>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="prototype-ribbon"><span class="dot"></span> Connected concept · Pitch the trip · Packet generation simulated locally</div>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="EF Educational Tours concept home" class="brand" href="index.html"><img alt="EF logo" class="brand-logo" src="ef-logo.svg"/></a>
+<nav aria-label="Primary navigation" class="primary-nav">
+<a href="index.html">Overview</a><a href="explore.html">Discover</a><a href="trip.html">Understand</a><a href="dashboard.html">Reflect</a>
+</nav>
+<div class="header-actions"><a class="btn btn-secondary btn-small" href="explore.html">Back to Discover</a><button aria-expanded="false" aria-label="Open navigation" class="menu-button" type="button"><span></span><span></span><span></span></button></div>
+</div>
+</header>
+<main id="main">
+<section class="pitch-hero">
+<div class="container pitch-hero-grid">
+<div>
+<p class="eyebrow">Pitch the trip</p>
+<h1>Turn interest into a case people can say yes to.</h1>
+<p class="lede">Choose who is making the case and who needs to hear it. EF reshapes the same tour into the learning, support, and practical value that matters most to that audience.</p>
+</div>
+<figure class="pitch-hero-photo photo-shell" data-fallback="Students preparing for travel"><img alt="Students traveling together on an EF tour" data-photo="" src="https://a-us.storyblok.com/f/1021279/1440x757/25f35d28a8/group-photo.png/m/1600x840/filters%3Aquality%2870%29"/></figure>
+</div>
+</section>
+<section class="pitch-builder-section">
+<div class="container pitch-layout">
+<section class="pitch-builder">
+<p class="eyebrow">Build your packet</p>
+<h2>Start with the audience.</h2>
+<div class="pitch-step">
+<span class="pitch-step-number">1</span><div><h3>Who is building the pitch?</h3><div class="choice-row"><button aria-pressed="true" class="choice-pill is-selected" data-creator="student" type="button">Student</button><button aria-pressed="false" class="choice-pill" data-creator="educator" type="button">Educator</button></div></div>
+</div>
+<div class="pitch-step">
+<span class="pitch-step-number">2</span><div><h3>Who needs to say yes?</h3><div class="choice-row"><button aria-pressed="true" class="choice-pill is-selected" data-pitch-audience="parent" type="button">Parent</button><button aria-pressed="false" class="choice-pill" data-pitch-audience="teacher" type="button">Teacher</button><button aria-pressed="false" class="choice-pill" data-pitch-audience="school" type="button">School / administrator</button></div></div>
+</div>
+<div class="pitch-step">
+<span class="pitch-step-number">3</span><div><h3>What should the packet emphasize?</h3><div class="check-grid"><label><input checked="" name="pitch-focus" type="checkbox"/> Learning outcomes</label><label><input checked="" name="pitch-focus" type="checkbox"/> Safety &amp; support</label><label><input checked="" name="pitch-focus" type="checkbox"/> Student interest</label><label><input name="pitch-focus" type="checkbox"/> Cost &amp; planning</label><label><input name="pitch-focus" type="checkbox"/> Classroom connection</label></div></div>
+</div>
+<button class="btn btn-primary" id="generate-packet" type="button">Build my pitch packet →</button>
+<p class="ai-inline-note"><span class="ai-spark">✦</span><span>AI changes the emphasis and language for the audience without changing the facts of the tour.</span></p>
+</section>
+<aside aria-live="polite" class="packet-preview">
+<div class="packet-topline"><img alt="EF logo" class="packet-logo" src="ef-logo.svg"/><span>Japan: Land of the Rising Sun</span></div>
+<div class="packet-tags"><span id="packet-creator">Prepared by: Student</span><span id="packet-audience">Prepared for: Parent</span></div>
+<h2 id="packet-headline">Why Japan: Land of the Rising Sun is worth saying yes to.</h2>
+<figure class="packet-photo photo-shell" data-fallback="Japan: Land of the Rising Sun"><img alt="Tokyo, Japan" data-photo="" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1400&amp;q=84"/></figure>
+<div class="packet-block"><span>Why this trip</span><p id="packet-why"></p></div>
+<div class="packet-block"><span>What students can learn</span><p id="packet-learning"></p></div>
+<div class="packet-block"><span>How EF supports the experience</span><p id="packet-support"></p></div>
+<div class="packet-block packet-ask"><span>The ask</span><p id="packet-ask"></p></div>
+<button class="btn btn-dark btn-full" id="download-packet" type="button">Download pitch packet ↓</button>
+</aside>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><img alt="EF logo" class="brand-logo" src="ef-logo.svg"/></a><p>Independent interview concept by Nathan Tia. EF and related marks belong to their owners. Student names and quotes are illustrative.</p></div><div class="footer-links"><a href="index.html">Overview</a><a href="explore.html">Discover</a><a href="trip.html">Understand</a><a href="dashboard.html">Reflect</a></div></div></footer>
+<div aria-live="polite" class="toast" role="status"></div><script src="app.js"></script>
 </body>
 </html>

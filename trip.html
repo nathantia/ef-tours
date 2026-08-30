@@ -1,321 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="An EF Tours trip detail concept showing what students experience, learn, and can apply in class.">
-  <title>London, Paris & Rome · EF Tours Concept</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="An EF Tours Japan trip detail concept showing what students experience, learn, and can apply in class." name="description"/>
+<title>Japan: Land of the Rising Sun · EF Tours Concept</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body data-page="trip">
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="prototype-ribbon"><span class="dot"></span> Concept 02 · Trip details · Classroom planning simulated locally</div>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="EF Educational Tours concept home"><img class="brand-logo" src="ef-logo.svg" alt="EF logo"></a>
-      <nav class="primary-nav" aria-label="Primary navigation">
-        <a href="index.html">Overview</a>
-        <a href="explore.html">Discover</a>
-        <a href="trip.html" aria-current="page">Understand</a>
-        <a href="dashboard.html">Reflect</a>
-      </nav>
-      <div class="header-actions">
-        <button class="btn btn-primary btn-small" type="button" data-demo="Your teacher’s enrollment flow would begin here.">Join this tour</button>
-        <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-      </div>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="trip-hero" id="overview">
-      <img data-photo src="https://a.storyblok.com/f/336931/2880x1270/c6263908ac/travel-philosophy-hero-desk.jpg/m/3840x1693/filters%3Ablur%280%29" alt="Students traveling together in Europe">
-      <div class="container trip-hero-inner">
-        <div class="trip-hero-copy">
-          <p class="eyebrow">Matched to your interests</p>
-          <h1>London, Paris &amp; Rome</h1>
-          <div class="hero-stats">
-            <span class="hero-stat">10 days</span>
-            <span class="hero-stat">3 countries</span>
-            <span class="hero-stat">History · art · culture</span>
-          </div>
-          <p class="lede">Walk through places that shaped European history—and collect observations you can use in history, art, language, or civics class.</p>
-          <div class="hero-actions">
-            <button class="btn btn-primary" type="button" data-demo="Your teacher’s enrollment flow would begin here.">Join your teacher’s tour</button>
-            <button class="btn btn-secondary" type="button" data-demo="A concise family summary would be ready to send.">Share with family</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <nav class="trip-subnav" aria-label="Trip detail sections">
-      <div class="container trip-subnav-inner">
-        <div class="trip-subnav-links">
-          <a href="#overview" class="is-active" data-subnav-link>Overview</a>
-          <a href="#itinerary" data-subnav-link>Itinerary</a>
-          <a href="#learning" data-subnav-link>Learning</a>
-          <a href="#trip-moments" data-subnav-link>Trip moments</a>
-          <a href="#price" data-subnav-link>Price</a>
-          <a href="#faqs" data-subnav-link>FAQs</a>
-        </div>
-        <a class="btn btn-primary btn-small trip-subnav-cta" href="#price">Start planning</a>
-      </div>
-    </nav>
-
-
-    <section class="section itinerary-section" id="itinerary">
-      <div class="container">
-        <div class="section-heading itinerary-intro reveal">
-          <div><p class="eyebrow">The itinerary, made useful</p><h2>More than where you’ll go.</h2></div>
-          <p>See what happens each day, what students can notice while they’re there, and how those moments can continue back in the classroom.</p>
-        </div>
-
-        <div class="itinerary-layout">
-          <div class="itinerary-days" aria-label="Day-by-day itinerary">
-            <article class="day-card reveal" id="day-1" data-city="london">
-              <div class="day-heading"><div><span class="day-kicker">Day 1 · London</span><h3>Arrive, settle in, and read the city.</h3></div><span class="day-time">Arrival day</span></div>
-              <figure class="day-image photo-shell" data-fallback="Students arriving in London"><img loading="lazy" data-photo src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="London skyline and Big Ben"></figure>
-              <p class="day-summary">Meet your Tour Director, get oriented, and take your first walk through the city. The goal is not to memorize London—it’s to begin noticing how it works.</p>
-              <div class="day-tabs" data-day-tabs>
-                <div class="day-tab-list" role="tablist"><button class="day-tab is-active" role="tab" aria-selected="true" data-tab="experience">Experience</button><button class="day-tab" role="tab" aria-selected="false" data-tab="notice">Notice</button><button class="day-tab" role="tab" aria-selected="false" data-tab="extend">Take it further</button></div>
-                <div class="day-tab-panel is-active" data-panel="experience"><p>Navigate your first neighborhood, learn the group rhythm, and practice simple travel routines with support close by.</p><div class="skill-line"><span>You’re practicing</span><b>Adaptability</b><b>Confidence</b></div></div>
-                <div class="day-tab-panel" data-panel="notice"><p>What feels different first—pace, sound, transit, architecture, or how people use public space?</p></div>
-                <div class="day-tab-panel" data-panel="extend"><p>Capture one photo of something ordinary that immediately tells you you’re somewhere new. Use it later as the opening image in a trip reflection.</p><div class="class-line">Class connection · Writing · Social studies</div></div>
-              </div>
-            </article>
-
-            <article class="day-card reveal" id="day-2" data-city="london">
-              <div class="day-heading"><div><span class="day-kicker">Day 2 · London</span><h3>Westminster, Parliament &amp; the Thames.</h3></div><span class="day-time">Civics + history</span></div>
-              <figure class="day-image photo-shell" data-fallback="Students exploring Westminster"><img loading="lazy" data-photo src="https://a.storyblok.com/f/239725/1500x2100/b50e0739fd/01_gb_lon_gallery_activities_studentssightseeing.png/m/1371x1920/filters%3Aquality%2870%29" alt="Students exploring London with an EF staff member"></figure>
-              <p class="day-summary">Walk through the heart of London’s civic life and see how government, ceremony, history, and everyday movement share the same streets.</p>
-              <div class="day-tabs" data-day-tabs>
-                <div class="day-tab-list" role="tablist"><button class="day-tab is-active" role="tab" aria-selected="true" data-tab="experience">Experience</button><button class="day-tab" role="tab" aria-selected="false" data-tab="notice">Notice</button><button class="day-tab" role="tab" aria-selected="false" data-tab="extend">Take it further</button></div>
-                <div class="day-tab-panel is-active" data-panel="experience"><p>Walk Westminster, see Parliament up close, cross the Thames, and navigate part of central London as a group.</p><div class="skill-line"><span>You’re practicing</span><b>Cultural awareness</b><b>Curiosity</b></div></div>
-                <div class="day-tab-panel" data-panel="notice"><p>How do buildings, monuments, guards, and public spaces communicate power? Who are these spaces designed to impress, include, or represent?</p></div>
-                <div class="day-tab-panel" data-panel="extend"><p>Photograph one public space that says something about British identity. Compare it later with a civic space in your own community.</p><div class="class-line">Class connection · History · Civics · Design</div></div>
-              </div>
-              <button class="context-audio" type="button" data-demo="Leo's 24-second Tour Lead perspective would play here."><span>▶</span><strong>Hear Leo explain what students usually notice here</strong><small>Tour Lead · 24 sec</small></button>
-            </article>
-
-            <article class="day-card reveal" id="day-3" data-city="london">
-              <div class="day-heading"><div><span class="day-kicker">Day 3 · London</span><h3>Stories, neighborhoods &amp; everyday culture.</h3></div><span class="day-time">Culture + independence</span></div>
-              <figure class="day-image photo-shell" data-fallback="Students walking in London"><img loading="lazy" data-photo src="https://a.storyblok.com/f/336931/2880x1270/c6263908ac/travel-philosophy-hero-desk.jpg/m/2400x1058/filters%3Ablur%280%29" alt="Students traveling together in Europe"></figure>
-              <p class="day-summary">Move beyond the major landmarks and pay attention to how neighborhoods, markets, transit, and daily routines shape the city.</p>
-              <div class="day-tabs" data-day-tabs>
-                <div class="day-tab-list" role="tablist"><button class="day-tab is-active" role="tab" aria-selected="true" data-tab="experience">Experience</button><button class="day-tab" role="tab" aria-selected="false" data-tab="notice">Notice</button><button class="day-tab" role="tab" aria-selected="false" data-tab="extend">Take it further</button></div>
-                <div class="day-tab-panel is-active" data-panel="experience"><p>Explore a neighborhood, make small choices with your group, and practice navigating an unfamiliar place with growing independence.</p><div class="skill-line"><span>You’re practicing</span><b>Agency</b><b>Communication</b></div></div>
-                <div class="day-tab-panel" data-panel="notice"><p>What do you learn from the moments between landmarks—signs, queues, transit, food, and how people share space?</p></div>
-                <div class="day-tab-panel" data-panel="extend"><p>Write three observations that no landmark description could have told you before arriving.</p><div class="class-line">Class connection · Writing · Culture</div></div>
-              </div>
-            </article>
-
-            <article class="day-card reveal" id="day-4" data-city="paris">
-              <div class="day-heading"><div><span class="day-kicker">Day 4 · Paris</span><h3>Cross the Channel and reset your assumptions.</h3></div><span class="day-time">Travel + comparison</span></div>
-              <figure class="day-image photo-shell" data-fallback="Paris"><img loading="lazy" data-photo src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="The Eiffel Tower in Paris"></figure>
-              <p class="day-summary">Travel to Paris and compare the feeling of arriving in a second major city. Notice what changes immediately and what feels unexpectedly familiar.</p>
-              <div class="day-tabs" data-day-tabs>
-                <div class="day-tab-list" role="tablist"><button class="day-tab is-active" role="tab" aria-selected="true" data-tab="experience">Experience</button><button class="day-tab" role="tab" aria-selected="false" data-tab="notice">Notice</button><button class="day-tab" role="tab" aria-selected="false" data-tab="extend">Take it further</button></div>
-                <div class="day-tab-panel is-active" data-panel="experience"><p>Travel to Paris, orient yourself to a new city, and begin comparing how two capitals communicate identity.</p><div class="skill-line"><span>You’re practicing</span><b>Open-mindedness</b><b>Adaptability</b></div></div>
-                <div class="day-tab-panel" data-panel="notice"><p>Which assumptions from London still work here—and which ones stop working immediately?</p></div>
-                <div class="day-tab-panel" data-panel="extend"><p>Create a quick two-column comparison: London / Paris. Add one observation each about movement, architecture, and public life.</p><div class="class-line">Class connection · Geography · Culture</div></div>
-              </div>
-            </article>
-
-            <article class="day-card reveal" id="day-5" data-city="paris">
-              <div class="day-heading"><div><span class="day-kicker">Day 5 · Paris</span><h3>The Louvre: when scale changes interpretation.</h3></div><span class="day-time">Art + perspective</span></div>
-              <figure class="day-image photo-shell" data-fallback="Students in Paris"><img loading="lazy" data-photo src="https://a.storyblok.com/f/239725/1500x2000/f41bc5ca5e/04_fr_par_gallery_activities_studentssightseeingatarcdetriomphe.png" alt="Students exploring Paris with an EF staff member"></figure>
-              <p class="day-summary">See major works in context and notice what changes when art is no longer a small image on a screen or page.</p>
-              <div class="day-tabs" data-day-tabs>
-                <div class="day-tab-list" role="tablist"><button class="day-tab is-active" role="tab" aria-selected="true" data-tab="experience">Experience</button><button class="day-tab" role="tab" aria-selected="false" data-tab="notice">Notice</button><button class="day-tab" role="tab" aria-selected="false" data-tab="extend">Take it further</button></div>
-                <div class="day-tab-panel is-active" data-panel="experience"><p>Move through the Louvre, encounter work at full scale, and compare a familiar image with the physical object in front of you.</p><div class="skill-line"><span>You’re practicing</span><b>Curiosity</b><b>Self-awareness</b></div></div>
-                <div class="day-tab-panel" data-panel="notice"><p>Choose one artwork that feels different in person. Is it scale, texture, placement, crowd behavior, or something else?</p></div>
-                <div class="day-tab-panel" data-panel="extend"><p>Explain how the physical setting changed your interpretation of one artwork or object.</p><div class="class-line">Class connection · Art · History · Writing</div></div>
-              </div>
-              <button class="context-audio" type="button" data-demo="Jules' 19-second student perspective would play here."><span>▶</span><strong>Hear Jules on seeing a familiar artwork in person</strong><small>Student · 19 sec</small></button>
-            </article>
-
-            <article class="day-card reveal" id="day-6" data-city="paris">
-              <div class="day-heading"><div><span class="day-kicker">Day 6 · Paris</span><h3>Culture lives outside the museum too.</h3></div><span class="day-time">Daily life + language</span></div>
-              <figure class="day-image photo-shell" data-fallback="Paris neighborhood"><img loading="lazy" data-photo src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="Paris street and neighborhood"></figure>
-              <p class="day-summary">Explore everyday Paris through neighborhood streets, food, language, and small interactions that make culture feel lived rather than displayed.</p>
-              <div class="day-tabs" data-day-tabs>
-                <div class="day-tab-list" role="tablist"><button class="day-tab is-active" role="tab" aria-selected="true" data-tab="experience">Experience</button><button class="day-tab" role="tab" aria-selected="false" data-tab="notice">Notice</button><button class="day-tab" role="tab" aria-selected="false" data-tab="extend">Take it further</button></div>
-                <div class="day-tab-panel is-active" data-panel="experience"><p>Practice a simple interaction, try something unfamiliar, and pay attention to how people use streets, cafés, and public spaces.</p><div class="skill-line"><span>You’re practicing</span><b>Communication</b><b>Confidence</b></div></div>
-                <div class="day-tab-panel" data-panel="notice"><p>What does everyday behavior teach you about culture that a famous landmark cannot?</p></div>
-                <div class="day-tab-panel" data-panel="extend"><p>Record one phrase, routine, or social cue you noticed and explain what it revealed about daily life.</p><div class="class-line">Class connection · Language · Culture</div></div>
-              </div>
-            </article>
-
-            <article class="day-card reveal" id="day-7" data-city="rome">
-              <div class="day-heading"><div><span class="day-kicker">Day 7 · Rome</span><h3>Arrive where the ancient city is still visible.</h3></div><span class="day-time">History in context</span></div>
-              <figure class="day-image photo-shell" data-fallback="Rome"><img loading="lazy" data-photo src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="The Colosseum in Rome"></figure>
-              <p class="day-summary">Arrive in Rome and begin noticing how layers of history coexist with contemporary streets, traffic, businesses, and neighborhoods.</p>
-              <div class="day-tabs" data-day-tabs>
-                <div class="day-tab-list" role="tablist"><button class="day-tab is-active" role="tab" aria-selected="true" data-tab="experience">Experience</button><button class="day-tab" role="tab" aria-selected="false" data-tab="notice">Notice</button><button class="day-tab" role="tab" aria-selected="false" data-tab="extend">Take it further</button></div>
-                <div class="day-tab-panel is-active" data-panel="experience"><p>Orient yourself to Rome and see how ancient structures remain part of the visual and practical life of the city.</p><div class="skill-line"><span>You’re practicing</span><b>Cultural awareness</b><b>Perspective</b></div></div>
-                <div class="day-tab-panel" data-panel="notice"><p>Where do you see the city preserving the past, adapting it, or simply living around it?</p></div>
-                <div class="day-tab-panel" data-panel="extend"><p>Photograph one place where two time periods visibly overlap.</p><div class="class-line">Class connection · History · Urban studies</div></div>
-              </div>
-            </article>
-
-            <article class="day-card reveal" id="day-8" data-city="rome">
-              <div class="day-heading"><div><span class="day-kicker">Day 8 · Rome</span><h3>The Colosseum &amp; Forum: read power from the ground up.</h3></div><span class="day-time">Archaeology + civics</span></div>
-              <figure class="day-image photo-shell" data-fallback="Roman Forum"><img loading="lazy" data-photo src="https://images.unsplash.com/photo-1531572753322-ad063cecc140?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="Roman ruins in Rome"></figure>
-              <p class="day-summary">Stand inside the spaces where public life, spectacle, religion, politics, and engineering came together.</p>
-              <div class="day-tabs" data-day-tabs>
-                <div class="day-tab-list" role="tablist"><button class="day-tab is-active" role="tab" aria-selected="true" data-tab="experience">Experience</button><button class="day-tab" role="tab" aria-selected="false" data-tab="notice">Notice</button><button class="day-tab" role="tab" aria-selected="false" data-tab="extend">Take it further</button></div>
-                <div class="day-tab-panel is-active" data-panel="experience"><p>Walk the Colosseum and Forum, use the physical layout as evidence, and connect ruins to the social systems they once supported.</p><div class="skill-line"><span>You’re practicing</span><b>Critical observation</b><b>Curiosity</b></div></div>
-                <div class="day-tab-panel" data-panel="notice"><p>What was this place built to make people think, feel, or do? Who had access, and who held power?</p></div>
-                <div class="day-tab-panel" data-panel="extend"><p>Build an argument about Roman public life using three pieces of visual evidence you collected on-site.</p><div class="class-line">Class connection · History · Civics</div></div>
-              </div>
-              <button class="context-audio" type="button" data-demo="Maya's 22-second educator perspective would play here."><span>▶</span><strong>Hear Maya on how students use the site as evidence</strong><small>Educator · 22 sec</small></button>
-            </article>
-
-            <article class="day-card reveal" id="day-9" data-city="rome">
-              <div class="day-heading"><div><span class="day-kicker">Day 9 · Rome</span><h3>Connect belief, art, food &amp; everyday life.</h3></div><span class="day-time">Culture + reflection</span></div>
-              <figure class="day-image photo-shell" data-fallback="Rome neighborhood"><img loading="lazy" data-photo src="https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="Rome street and buildings"></figure>
-              <p class="day-summary">Use the final full day to connect monumental Rome with the smaller details of food, religion, neighborhoods, and daily routines.</p>
-              <div class="day-tabs" data-day-tabs>
-                <div class="day-tab-list" role="tablist"><button class="day-tab is-active" role="tab" aria-selected="true" data-tab="experience">Experience</button><button class="day-tab" role="tab" aria-selected="false" data-tab="notice">Notice</button><button class="day-tab" role="tab" aria-selected="false" data-tab="extend">Take it further</button></div>
-                <div class="day-tab-panel is-active" data-panel="experience"><p>Experience a final mix of major cultural sites and ordinary city life, then compare what feels different from your first day abroad.</p><div class="skill-line"><span>You’re practicing</span><b>Self-awareness</b><b>Reflection</b></div></div>
-                <div class="day-tab-panel" data-panel="notice"><p>What do you notice now that you would have missed on Day 1?</p></div>
-                <div class="day-tab-panel" data-panel="extend"><p>Choose the three moments that best explain how your understanding changed across the trip.</p><div class="class-line">Class connection · Reflection · Portfolio</div></div>
-              </div>
-            </article>
-
-            <article class="day-card reveal" id="day-10" data-city="home">
-              <div class="day-heading"><div><span class="day-kicker">Day 10 · Home</span><h3>Return with more than photos.</h3></div><span class="day-time">Reflect + apply</span></div>
-              <div class="return-card"><div><span class="return-icon">↗</span><h4>What will you use next?</h4><p>Choose one observation, question, or skill from the trip to bring into class, a project, or the next decision you make.</p></div></div>
-              <div class="day-tabs" data-day-tabs>
-                <div class="day-tab-list" role="tablist"><button class="day-tab is-active" role="tab" aria-selected="true" data-tab="experience">Experience</button><button class="day-tab" role="tab" aria-selected="false" data-tab="notice">Notice</button><button class="day-tab" role="tab" aria-selected="false" data-tab="extend">Take it further</button></div>
-                <div class="day-tab-panel is-active" data-panel="experience"><p>Return home, reconnect with familiar routines, and notice which parts of the trip keep resurfacing in your thinking.</p><div class="skill-line"><span>You’re practicing</span><b>Reflection</b><b>Agency</b></div></div>
-                <div class="day-tab-panel" data-panel="notice"><p>What feels different now—not about Europe, but about how you see your own community or yourself?</p></div>
-                <div class="day-tab-panel" data-panel="extend"><p>Use the Reflect dashboard to turn one trip moment into a class connection, family recap, or advice for the next traveler.</p><div class="class-line">Next step · Reflect dashboard</div></div>
-              </div>
-            </article>
-          </div>
-
-          <aside class="itinerary-rail" aria-label="Trip overview">
-            <div class="rail-card">
-              <p class="rail-eyebrow">Your journey</p>
-              <h3>London, Paris &amp; Rome</h3>
-              <p class="rail-meta">10 days · 3 countries</p>
-              <nav class="rail-route" aria-label="Itinerary cities">
-                <a href="#day-1" class="rail-stop is-active" data-rail-city="london"><span class="rail-dot"></span><span><b>London</b><small>Days 1–3 · public life + confidence</small></span></a>
-                <a href="#day-4" class="rail-stop" data-rail-city="paris"><span class="rail-dot"></span><span><b>Paris</b><small>Days 4–6 · art + cultural identity</small></span></a>
-                <a href="#day-7" class="rail-stop" data-rail-city="rome"><span class="rail-dot"></span><span><b>Rome</b><small>Days 7–9 · history + civic space</small></span></a>
-                <a href="#day-10" class="rail-stop" data-rail-city="home"><span class="rail-dot"></span><span><b>Home</b><small>Day 10 · reflect + apply</small></span></a>
-              </nav>
-              <div class="rail-practice"><span>You’ll practice</span><div><b>Curiosity</b><b>Cultural awareness</b><b>Confidence</b><b>Communication</b></div></div>
-              <a class="btn btn-secondary btn-full" href="#price">Start planning</a>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-blue" id="learning">
-      <div class="container plan-grid">
-        <div class="plan-control reveal">
-          <p class="eyebrow light">AI embedded in the task</p>
-          <h2>Connect this itinerary to your class.</h2>
-          <p>Choose one subject. AI turns the real itinerary into a concise before, during, and after learning plan—without opening a separate chat.</p>
-          <div class="form-row">
-            <select id="subject-select" aria-label="Choose a class subject">
-              <option value="history">History &amp; civics</option>
-              <option value="art">Art &amp; design</option>
-              <option value="language">World language</option>
-              <option value="literature">Literature</option>
-            </select>
-            <button class="btn btn-primary" type="button" id="build-plan">Build a simple plan</button>
-          </div>
-        </div>
-
-        <article class="learning-plan reveal" aria-live="polite">
-          <p class="eyebrow">History &amp; civics plan</p>
-          <h3 id="plan-title">How cities show power</h3>
-          <div class="plan-list">
-            <div class="plan-item"><b>Before</b><strong id="plan-before">Compare one modern public space with Westminster. What does its design ask people to notice?</strong></div>
-            <div class="plan-item"><b>During</b><strong id="plan-during">Photograph or sketch evidence of how power is represented in London, Paris, and Rome.</strong></div>
-            <div class="plan-item"><b>After</b><strong id="plan-after">Create a five-slide argument: “What can a city teach us about who held power?”</strong></div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section trip-moments-section" id="trip-moments">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div><p class="eyebrow">Voice of the traveler</p><h2>Explore the trip through real moments.</h2></div>
-          <p>Follow the route and open moments from students, educators, and Tour Leads along the way.</p>
-        </div>
-        <div class="trip-map-shell reveal">
-          <div class="trip-map real-map" role="img" aria-label="Map of Western Europe connecting London, Paris, and Rome with clickable trip moments">
-            <img class="real-map-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Europe_blank_map_with_borders_and_capital_cities.png/960px-Europe_blank_map_with_borders_and_capital_cities.png" alt="Political map of Europe used as the trip route background">
-            <div class="map-tint" aria-hidden="true"></div>
-            <svg viewBox="0 0 960 520" aria-hidden="true" class="trip-map-route">
-              <path d="M245 118 C315 148 340 165 385 205 S515 300 602 382" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" opacity=".72"/>
-              <path d="M245 118 C315 148 340 165 385 205 S515 300 602 382" fill="none" stroke="#0873e6" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 10"/>
-            </svg>
-            <span class="map-city-label" style="left:22%;top:17%">London</span>
-            <span class="map-city-label" style="left:39%;top:34%">Paris</span>
-            <span class="map-city-label" style="left:61%;top:70%">Rome</span>
-            <button class="map-dot is-active" style="left:24%;top:25%" data-map-story="london-video" aria-label="Open London student video"><span>▶</span></button>
-            <button class="map-dot" style="left:29%;top:20%" data-map-story="london-audio" aria-label="Open London Tour Lead audio"><span>♪</span></button>
-            <button class="map-dot" style="left:39%;top:40%" data-map-story="paris-image" aria-label="Open Paris image story"><span>●</span></button>
-            <button class="map-dot" style="left:44%;top:34%" data-map-story="paris-audio" aria-label="Open Paris educator audio"><span>♪</span></button>
-            <button class="map-dot" style="left:59%;top:76%" data-map-story="rome-video" aria-label="Open Rome student video"><span>▶</span></button>
-            <button class="map-dot" style="left:64%;top:68%" data-map-story="rome-image" aria-label="Open Rome image story"><span>●</span></button>
-            <span class="map-attribution">Map: Grnz26 / Wikimedia Commons · CC BY 4.0</span>
-          </div>
-          <aside class="map-story-card" aria-live="polite">
-            <div class="map-story-media photo-shell" data-fallback="Student story"><img id="map-story-image" data-photo src="https://a.storyblok.com/f/239725/1500x2100/b50e0739fd/01_gb_lon_gallery_activities_studentssightseeing.png/m/1371x1920/filters%3Aquality%2870%29" alt="Students exploring London"></div>
-            <div class="map-story-copy"><p class="eyebrow" id="map-story-role">Student video · London</p><h3 id="map-story-title">The first moment London felt real.</h3><p id="map-story-text">“I knew the landmarks, but walking between them made the city feel completely different from the version I had in my head.”</p><button class="btn btn-dark btn-small" id="map-story-action" type="button" data-demo="This short student clip would play here.">Play 21 sec</button></div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section price-section" id="price">
-      <div class="container">
-        <div class="price-heading reveal"><p class="eyebrow">Start planning</p><h2>Unlock your trip price.</h2><p>Choose a departure city and date to see an illustrative starting price for this prototype.</p></div>
-        <div class="price-calculator reveal">
-          <div class="price-fields">
-            <label>Leaving from:<input type="text" value="Boston (MA)" aria-label="Leaving from"></label>
-            <label>Leaving on:<input type="date" value="2027-03-13" aria-label="Leaving on"></label>
-          </div>
-          <div class="price-main"><strong>$4,479<span>*</span></strong><button class="price-details-link" type="button" data-demo="A detailed price breakdown would open here.">View price details →</button></div>
-          <div class="price-cta"><button class="btn btn-primary" type="button" data-demo="A personalized quote flow would begin here.">Get your personalized quote</button><small>*Illustrative price for prototype review. Restrictions apply.</small></div>
-        </div>
-        <div class="price-support-grid reveal">
-          <button class="price-support-card" type="button" data-demo="Payment plan information would open here."><span class="support-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18M8 15h2M14 15h2"/></svg></span><span><strong>Payment plan options</strong><small>Pay over time interest-free or pay all at once.</small></span><b>→</b></button>
-          <button class="price-support-card" type="button" data-demo="Fundraising information would open here."><span class="support-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/><path d="M12 5.6 9.7 7.9a2 2 0 1 0 2.8 2.8l1.1-1.1a2 2 0 0 1 2.8 0l2.2 2.2"/></svg></span><span><strong>Fundraising</strong><small>Every traveler receives a no-fee donation page.</small></span><b>→</b></button>
-          <button class="price-support-card" type="button" data-demo="Scholarship information would open here."><span class="support-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg></span><span><strong>Global Citizen Scholarship</strong><small>EF awards scholarships to student travelers each year.</small></span><b>→</b></button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section faq-section" id="faqs">
-      <div class="container faq-layout reveal">
-        <div class="faq-intro"><p class="eyebrow">Planning questions</p><h2>What families usually ask.</h2><p>Need to make the case for this experience? Turn the trip into a clear, shareable packet for a parent, teacher, or school leader.</p><a class="btn btn-primary" href="pitch.html">Pitch the trip <span aria-hidden="true">→</span></a></div>
-        <div class="faq-list">
-          <details open><summary>Who supports students while they travel?</summary><p>The group travels with its educator and an EF Tour Director, with additional local support built into the itinerary.</p></details>
-          <details><summary>What is included in the trip price?</summary><p>For this concept, transportation, hotels, scheduled activities, and guided support are presented as coordinated parts of the experience.</p></details>
-          <details><summary>Can families pay over time?</summary><p>The planning experience surfaces payment plan and fundraising options alongside the trip price.</p></details>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand" href="index.html"><img class="brand-logo" src="ef-logo.svg" alt="EF logo"></a>
-        <p>Independent interview concept by Nathan Tia. EF and related marks belong to their owners. Student names and quotes are illustrative.</p>
-      </div>
-      <div class="footer-links"><a href="index.html">Overview</a><a href="explore.html">Discover</a><a href="trip.html">Understand</a><a href="dashboard.html">Reflect</a></div>
-    </div>
-  </footer>
-  <div class="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="prototype-ribbon"><span class="dot"></span> Concept 02 · Trip details · Classroom planning simulated locally</div>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="EF Educational Tours concept home" class="brand" href="index.html"><img alt="EF logo" class="brand-logo" src="ef-logo.svg"/></a>
+<nav aria-label="Primary navigation" class="primary-nav">
+<a href="index.html">Overview</a>
+<a href="explore.html">Discover</a>
+<a aria-current="page" href="trip.html">Understand</a>
+<a href="dashboard.html">Reflect</a>
+</nav>
+<div class="header-actions">
+<button class="btn btn-primary btn-small" data-demo="Your teacher’s enrollment flow would begin here." type="button">Join this tour</button>
+<button aria-expanded="false" aria-label="Open navigation" class="menu-button" type="button"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="trip-hero" id="overview">
+<img alt="Tokyo, Japan at night" data-photo="" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/>
+<div class="container trip-hero-inner"><div class="trip-hero-copy">
+<p class="eyebrow">Matched to your interests</p><h1>Japan: Land of the Rising Sun</h1>
+<div class="hero-stats"><span class="hero-stat">11 days</span><span class="hero-stat">1 country</span><span class="hero-stat">Tradition · technology · culture</span></div>
+<p class="lede">Experience Japan’s many identities—from Tokyo’s pace and pop culture to Kyoto’s temples, Hakone’s landscape, and Hiroshima’s history.</p>
+<div class="hero-actions"><button class="btn btn-primary" data-demo="Your teacher’s enrollment flow would begin here." type="button">Join your teacher’s tour</button><button class="btn btn-secondary" data-demo="A concise family summary would be ready to send." type="button">Share with family</button></div>
+</div></div>
+</section>
+<nav aria-label="Trip detail sections" class="trip-subnav"><div class="container trip-subnav-inner"><div class="trip-subnav-links"><a class="is-active" data-subnav-link="" href="#overview">Overview</a><a data-subnav-link="" href="#itinerary">Itinerary</a><a data-subnav-link="" href="#learning">Learning</a><a data-subnav-link="" href="#trip-moments">Trip moments</a><a data-subnav-link="" href="#price">Price</a><a data-subnav-link="" href="#faqs">FAQs</a></div><a class="btn btn-primary btn-small trip-subnav-cta" href="#price">Start planning</a></div></nav>
+<section class="section itinerary-section" id="itinerary"><div class="container"><div class="section-heading itinerary-intro reveal"><div><p class="eyebrow">The itinerary, made useful</p><h2>More than where you’ll go.</h2></div><p>See what happens each day, what students can notice while they’re there, and how those moments can continue back in the classroom.</p></div>
+<div class="itinerary-layout"><div class="itinerary-days">
+<article class="day-card reveal" data-city="tokyo" id="day-1">
+<div class="day-heading"><div><span class="day-kicker">Day 1 · Overnight flight</span><h3>Cross the Pacific and reset your frame of reference.</h3></div><span class="day-time">Travel + anticipation</span></div>
+<figure class="day-image photo-shell" data-fallback="Overnight flight"><img alt="Student travel experience in Overnight flight, Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></figure>
+<p class="day-summary">The learning starts before arrival: students prepare to enter a place where familiar routines, language, scale, and social expectations will work differently.</p>
+<div class="day-tabs" data-day-tabs="">
+<div class="day-tab-list" role="tablist"><button aria-selected="true" class="day-tab is-active" data-tab="experience" role="tab">Experience</button><button aria-selected="false" class="day-tab" data-tab="notice" role="tab">Notice</button><button aria-selected="false" class="day-tab" data-tab="extend" role="tab">Take it further</button></div>
+<div class="day-tab-panel is-active" data-panel="experience"><p>Travel overnight, review arrival routines, and set one personal intention for the experience ahead.</p><div class="skill-line"><span>You’re practicing</span><b>Curiosity</b><b>Adaptability</b></div></div>
+<div class="day-tab-panel" data-panel="notice"><p>What assumptions about Japan are you bringing with you before you have seen it firsthand?</p></div>
+<div class="day-tab-panel" data-panel="extend"><p>Write one expectation you want the trip to challenge or complicate.</p><div class="class-line">Class connection · Writing · Global studies</div></div>
+</div>
+</article>
+<article class="day-card reveal" data-city="tokyo" id="day-2">
+<div class="day-heading"><div><span class="day-kicker">Day 2 · Tokyo</span><h3>Arrive in a city of contrasts.</h3></div><span class="day-time">Arrival + orientation</span></div>
+<figure class="day-image photo-shell" data-fallback="Tokyo"><img alt="Student travel experience in Tokyo, Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></figure>
+<p class="day-summary">Meet your Tour Director and begin reading Tokyo as a place where dense modern systems coexist with longstanding customs and rituals.</p>
+<div class="day-tabs" data-day-tabs="">
+<div class="day-tab-list" role="tablist"><button aria-selected="true" class="day-tab is-active" data-tab="experience" role="tab">Experience</button><button aria-selected="false" class="day-tab" data-tab="notice" role="tab">Notice</button><button aria-selected="false" class="day-tab" data-tab="extend" role="tab">Take it further</button></div>
+<div class="day-tab-panel is-active" data-panel="experience"><p>Get oriented, learn group rhythms, navigate the neighborhood, and experience your first meal and street-level impressions.</p><div class="skill-line"><span>You’re practicing</span><b>Confidence</b><b>Cultural awareness</b></div></div>
+<div class="day-tab-panel" data-panel="notice"><p>What feels most different first: pace, etiquette, transit, sound, signage, or personal space?</p></div>
+<div class="day-tab-panel" data-panel="extend"><p>Capture one ordinary detail that immediately tells you you are somewhere new.</p><div class="class-line">Class connection · Writing · Culture</div></div>
+</div>
+</article>
+<article class="day-card reveal" data-city="tokyo" id="day-3">
+<div class="day-heading"><div><span class="day-kicker">Day 3 · Tokyo</span><h3>Asakusa, Ueno &amp; Akihabara: old systems, new systems.</h3></div><span class="day-time">History + technology</span></div>
+<figure class="day-image photo-shell" data-fallback="Tokyo"><img alt="Student travel experience in Tokyo, Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></figure>
+<p class="day-summary">Move from temple traditions and museum collections into Akihabara’s technology and pop-culture landscape.</p>
+<div class="day-tabs" data-day-tabs="">
+<div class="day-tab-list" role="tablist"><button aria-selected="true" class="day-tab is-active" data-tab="experience" role="tab">Experience</button><button aria-selected="false" class="day-tab" data-tab="notice" role="tab">Notice</button><button aria-selected="false" class="day-tab" data-tab="extend" role="tab">Take it further</button></div>
+<div class="day-tab-panel is-active" data-panel="experience"><p>Visit Asakusa Kannon Temple, explore Ueno, and compare historic ritual with contemporary consumer and technology culture.</p><div class="skill-line"><span>You’re practicing</span><b>Open-mindedness</b><b>Observation</b></div></div>
+<div class="day-tab-panel" data-panel="notice"><p>Where does tradition remain visible inside one of the world’s most technologically advanced cities?</p></div>
+<div class="day-tab-panel" data-panel="extend"><p>Choose two images—one historic, one contemporary—and explain what they reveal about continuity and change.</p><div class="class-line">Class connection · History · Technology · Culture</div></div>
+</div>
+<button class="context-audio" data-demo="A Tour Lead perspective from Tokyo would play here." type="button"><span>▶</span><strong>Hear Leo on what students start noticing in Tokyo</strong><small>Tour Lead · 24 sec</small></button>
+</article>
+<article class="day-card reveal" data-city="tokyo" id="day-4">
+<div class="day-heading"><div><span class="day-kicker">Day 4 · Tokyo</span><h3>Meiji, Harajuku &amp; Shibuya: identity in public.</h3></div><span class="day-time">Culture + identity</span></div>
+<figure class="day-image photo-shell" data-fallback="Tokyo"><img alt="Student travel experience in Tokyo, Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></figure>
+<p class="day-summary">See how sacred space, youth fashion, retail, and one of the world’s busiest crossings coexist within a short distance.</p>
+<div class="day-tabs" data-day-tabs="">
+<div class="day-tab-list" role="tablist"><button aria-selected="true" class="day-tab is-active" data-tab="experience" role="tab">Experience</button><button aria-selected="false" class="day-tab" data-tab="notice" role="tab">Notice</button><button aria-selected="false" class="day-tab" data-tab="extend" role="tab">Take it further</button></div>
+<div class="day-tab-panel is-active" data-panel="experience"><p>Visit Meiji Shrine, walk Harajuku, explore Shibuya, and navigate a supervised small-group experience.</p><div class="skill-line"><span>You’re practicing</span><b>Agency</b><b>Communication</b></div></div>
+<div class="day-tab-panel" data-panel="notice"><p>How do people signal identity through clothing, behavior, ritual, and the use of shared space?</p></div>
+<div class="day-tab-panel" data-panel="extend"><p>Compare one unwritten social rule you notice in Tokyo with one at home.</p><div class="class-line">Class connection · Sociology · Culture · Design</div></div>
+</div>
+</article>
+<article class="day-card reveal" data-city="hakone" id="day-5">
+<div class="day-heading"><div><span class="day-kicker">Day 5 · Kamakura • Hakone</span><h3>Move from megacity to mountain landscape.</h3></div><span class="day-time">Belief + environment</span></div>
+<figure class="day-image photo-shell" data-fallback="Kamakura • Hakone"><img alt="Student travel experience in Kamakura • Hakone, Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1526481280695-3c687fd643ed?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></figure>
+<p class="day-summary">Travel through Kamakura toward Hakone and see how religious sites, landscape, and regional identity change the rhythm of the trip.</p>
+<div class="day-tabs" data-day-tabs="">
+<div class="day-tab-list" role="tablist"><button aria-selected="true" class="day-tab is-active" data-tab="experience" role="tab">Experience</button><button aria-selected="false" class="day-tab" data-tab="notice" role="tab">Notice</button><button aria-selected="false" class="day-tab" data-tab="extend" role="tab">Take it further</button></div>
+<div class="day-tab-panel is-active" data-panel="experience"><p>Visit the Great Buddha and Hachimangu Shrine, then continue toward the Fuji-Hakone-Izu region.</p><div class="skill-line"><span>You’re practicing</span><b>Curiosity</b><b>Cultural sensitivity</b></div></div>
+<div class="day-tab-panel" data-panel="notice"><p>How does the experience of a sacred site change when landscape and movement are part of the setting?</p></div>
+<div class="day-tab-panel" data-panel="extend"><p>Create a short photo essay connecting place, belief, and scale.</p><div class="class-line">Class connection · World religions · Geography</div></div>
+</div>
+</article>
+<article class="day-card reveal" data-city="hakone" id="day-6">
+<div class="day-heading"><div><span class="day-kicker">Day 6 · Hakone • Kyoto</span><h3>See Fuji, then ride the system that connects Japan.</h3></div><span class="day-time">Nature + infrastructure</span></div>
+<figure class="day-image photo-shell" data-fallback="Hakone • Kyoto"><img alt="Student travel experience in Hakone • Kyoto, Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></figure>
+<p class="day-summary">Experience Hakone’s landscape before boarding the shinkansen to Kyoto—moving from natural systems to one of Japan’s most recognizable transportation systems.</p>
+<div class="day-tabs" data-day-tabs="">
+<div class="day-tab-list" role="tablist"><button aria-selected="true" class="day-tab is-active" data-tab="experience" role="tab">Experience</button><button aria-selected="false" class="day-tab" data-tab="notice" role="tab">Notice</button><button aria-selected="false" class="day-tab" data-tab="extend" role="tab">Take it further</button></div>
+<div class="day-tab-panel is-active" data-panel="experience"><p>Explore Hakone, see Mount Fuji when weather permits, stop near Odawara, and travel by bullet train to Kyoto.</p><div class="skill-line"><span>You’re practicing</span><b>Adaptability</b><b>Systems thinking</b></div></div>
+<div class="day-tab-panel" data-panel="notice"><p>What does the bullet train reveal about how infrastructure can shape daily life and national identity?</p></div>
+<div class="day-tab-panel" data-panel="extend"><p>Compare one transportation system in Japan with one at home: speed, access, behavior, and design.</p><div class="class-line">Class connection · Geography · Engineering · Design</div></div>
+</div>
+</article>
+<article class="day-card reveal" data-city="kyoto" id="day-7">
+<div class="day-heading"><div><span class="day-kicker">Day 7 · Kyoto</span><h3>Kyoto: history is still part of the present.</h3></div><span class="day-time">History + design</span></div>
+<figure class="day-image photo-shell" data-fallback="Kyoto"><img alt="Student travel experience in Kyoto, Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></figure>
+<p class="day-summary">Explore places shaped by imperial, shogunate, Buddhist, and craft traditions—and notice how preservation and everyday life overlap.</p>
+<div class="day-tabs" data-day-tabs="">
+<div class="day-tab-list" role="tablist"><button aria-selected="true" class="day-tab is-active" data-tab="experience" role="tab">Experience</button><button aria-selected="false" class="day-tab" data-tab="notice" role="tab">Notice</button><button aria-selected="false" class="day-tab" data-tab="extend" role="tab">Take it further</button></div>
+<div class="day-tab-panel is-active" data-panel="experience"><p>Visit the Golden Pavilion, Nijō Castle, and Arashiyama with expert context.</p><div class="skill-line"><span>You’re practicing</span><b>Cultural awareness</b><b>Perspective</b></div></div>
+<div class="day-tab-panel" data-panel="notice"><p>What choices make a place feel preserved rather than frozen in time?</p></div>
+<div class="day-tab-panel" data-panel="extend"><p>Choose one architectural detail and explain what it communicates about power, belief, or aesthetics.</p><div class="class-line">Class connection · History · Art · Design</div></div>
+</div>
+<button class="context-audio" data-demo="A student perspective from Kyoto would play here." type="button"><span>▶</span><strong>Hear Maya on how Kyoto changed what tradition meant to her</strong><small>Student · 21 sec</small></button>
+</article>
+<article class="day-card reveal" data-city="kyoto" id="day-8">
+<div class="day-heading"><div><span class="day-kicker">Day 8 · Kyoto • Nara</span><h3>Fushimi Inari &amp; Nara: ritual, repetition, and memory.</h3></div><span class="day-time">Belief + continuity</span></div>
+<figure class="day-image photo-shell" data-fallback="Kyoto • Nara"><img alt="Student travel experience in Kyoto • Nara, Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></figure>
+<p class="day-summary">Walk through torii gates, visit Nara, and study how religious spaces remain active parts of cultural life.</p>
+<div class="day-tabs" data-day-tabs="">
+<div class="day-tab-list" role="tablist"><button aria-selected="true" class="day-tab is-active" data-tab="experience" role="tab">Experience</button><button aria-selected="false" class="day-tab" data-tab="notice" role="tab">Notice</button><button aria-selected="false" class="day-tab" data-tab="extend" role="tab">Take it further</button></div>
+<div class="day-tab-panel is-active" data-panel="experience"><p>Visit Fushimi Inari-taisha, tour Nara, and see Todaiji Temple.</p><div class="skill-line"><span>You’re practicing</span><b>Empathy</b><b>Cultural sensitivity</b></div></div>
+<div class="day-tab-panel" data-panel="notice"><p>How does participating respectfully in a living religious space differ from visiting a monument or museum?</p></div>
+<div class="day-tab-panel" data-panel="extend"><p>Write three guidelines for learning in a sacred place without turning it into a backdrop.</p><div class="class-line">Class connection · World religions · Ethics · Culture</div></div>
+</div>
+</article>
+<article class="day-card reveal" data-city="hiroshima" id="day-9">
+<div class="day-heading"><div><span class="day-kicker">Day 9 · Hiroshima • Miyajima</span><h3>History, memory, and responsibility.</h3></div><span class="day-time">History + reflection</span></div>
+<figure class="day-image photo-shell" data-fallback="Hiroshima • Miyajima"><img alt="Student travel experience in Hiroshima • Miyajima, Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></figure>
+<p class="day-summary">Travel to Hiroshima and encounter how a city remembers catastrophe while also presenting a living, contemporary identity.</p>
+<div class="day-tabs" data-day-tabs="">
+<div class="day-tab-list" role="tablist"><button aria-selected="true" class="day-tab is-active" data-tab="experience" role="tab">Experience</button><button aria-selected="false" class="day-tab" data-tab="notice" role="tab">Notice</button><button aria-selected="false" class="day-tab" data-tab="extend" role="tab">Take it further</button></div>
+<div class="day-tab-panel is-active" data-panel="experience"><p>Visit Peace Memorial Park and Museum, then travel to Miyajima and Itsukushima Shrine.</p><div class="skill-line"><span>You’re practicing</span><b>Empathy</b><b>Self-awareness</b></div></div>
+<div class="day-tab-panel" data-panel="notice"><p>What is the difference between learning a historical event and standing in a place built around remembering it?</p></div>
+<div class="day-tab-panel" data-panel="extend"><p>Record a private reflection before discussing the experience with the group.</p><div class="class-line">Class connection · History · Ethics · Civics</div></div>
+</div>
+<button class="context-audio" data-demo="An educator perspective from Hiroshima would play here." type="button"><span>▶</span><strong>Hear Ms. Rivera on making space for reflection in Hiroshima</strong><small>Educator · 27 sec</small></button>
+</article>
+<article class="day-card reveal" data-city="kyoto" id="day-10">
+<div class="day-heading"><div><span class="day-kicker">Day 10 · Himeji • Kansai</span><h3>Read power through architecture.</h3></div><span class="day-time">Architecture + comparison</span></div>
+<figure class="day-image photo-shell" data-fallback="Himeji • Kansai"><img alt="Student travel experience in Himeji • Kansai, Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1576675466969-38eeae4b41f6?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></figure>
+<p class="day-summary">Visit Himeji Castle and use the final full day to compare how architecture, defense, ceremony, and public memory changed across the trip.</p>
+<div class="day-tabs" data-day-tabs="">
+<div class="day-tab-list" role="tablist"><button aria-selected="true" class="day-tab is-active" data-tab="experience" role="tab">Experience</button><button aria-selected="false" class="day-tab" data-tab="notice" role="tab">Notice</button><button aria-selected="false" class="day-tab" data-tab="extend" role="tab">Take it further</button></div>
+<div class="day-tab-panel is-active" data-panel="experience"><p>Travel via Himeji and explore one of Japan’s most significant surviving castles before returning to the Kansai region.</p><div class="skill-line"><span>You’re practicing</span><b>Observation</b><b>Synthesis</b></div></div>
+<div class="day-tab-panel" data-panel="notice"><p>Which place on the trip most changed your understanding of Japanese history—and why?</p></div>
+<div class="day-tab-panel" data-panel="extend"><p>Build a three-image comparison connecting Tokyo, Kyoto, and Himeji.</p><div class="class-line">Class connection · History · Architecture · Visual literacy</div></div>
+</div>
+</article><article class="day-card reveal return-card" data-city="home" id="day-11">
+<div class="day-heading"><div><span class="day-kicker">Day 11 · Return home</span><h3>Return with more than photos.</h3></div><span class="day-time">Reflect + apply</span></div>
+<p class="day-summary">The trip ends, but the learning keeps moving. Use the flight home and the first days back to decide what changed, what is useful, and what deserves to be shared.</p>
+<div class="day-tabs" data-day-tabs="">
+<div class="day-tab-list" role="tablist"><button aria-selected="true" class="day-tab is-active" data-tab="experience" role="tab">Experience</button><button aria-selected="false" class="day-tab" data-tab="notice" role="tab">Notice</button><button aria-selected="false" class="day-tab" data-tab="extend" role="tab">What will you use next?</button></div>
+<div class="day-tab-panel is-active" data-panel="experience"><p>Travel home with a collection of moments, conversations, questions, and observations that are now yours to interpret.</p><div class="skill-line"><span>You’re practicing</span><b>Reflection</b><b>Agency</b></div></div>
+<div class="day-tab-panel" data-panel="notice"><p>What do you see differently now that felt normal before the trip? What part of Japan keeps resurfacing in your thinking?</p></div>
+<div class="day-tab-panel" data-panel="extend"><p>Choose one idea from the trip to apply in class, share with family, or pass to the next group of travelers.</p><div class="class-line">Class connection · Reflection · Communication</div></div>
+</div>
+<div class="roundtrip-video"><div class="roundtrip-copy"><p class="eyebrow">EF Roundtrip</p><h4>Hear what the experience meant after returning home.</h4><p>A student reflects on Japan after the tour—connecting the trip itself to what stays with you afterward.</p></div><div class="roundtrip-embed"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" src="https://www.youtube.com/embed/99AODTqa2LE" title="EF Roundtrip student story from Japan"></iframe></div></div>
+</article></div>
+<aside class="itinerary-rail"><div class="rail-card"><p class="eyebrow">Your journey</p><h3>Japan: Land of the Rising Sun</h3><p class="rail-meta">11 days · Japan</p><div class="rail-stops"><a class="rail-stop is-active" data-rail-city="tokyo" href="#day-2"><span class="rail-dot"></span><span><b>Tokyo</b><small>Days 2–4 · city systems + identity</small></span></a><a class="rail-stop" data-rail-city="hakone" href="#day-5"><span class="rail-dot"></span><span><b>Kamakura &amp; Hakone</b><small>Days 5–6 · belief + landscape</small></span></a><a class="rail-stop" data-rail-city="kyoto" href="#day-7"><span class="rail-dot"></span><span><b>Kyoto &amp; Nara</b><small>Days 7–8 · tradition + continuity</small></span></a><a class="rail-stop" data-rail-city="hiroshima" href="#day-9"><span class="rail-dot"></span><span><b>Hiroshima</b><small>Days 9–10 · memory + perspective</small></span></a><a class="rail-stop" data-rail-city="home" href="#day-11"><span class="rail-dot"></span><span><b>Home</b><small>Day 11 · reflect + apply</small></span></a></div><div class="rail-skills"><span>You’ll practice</span><div><b>Curiosity</b><b>Cultural awareness</b><b>Adaptability</b><b>Communication</b></div></div><a class="btn btn-secondary btn-full" href="#price">Start planning</a></div></aside></div></div></section>
+<section class="section section-blue" id="learning"><div class="container plan-grid"><div class="plan-control reveal"><p class="eyebrow light">AI embedded in the task</p><h2>Connect this itinerary to your class.</h2><p>Choose one subject. AI turns the real itinerary into a concise before, during, and after learning plan—without opening a separate chat.</p><div class="form-row"><select aria-label="Choose a class subject" id="subject-select"><option value="history">History &amp; civics</option><option value="art">Art &amp; design</option><option value="language">World language</option><option value="literature">Literature</option></select><button class="btn btn-primary" id="build-plan" type="button">Build a simple plan</button></div></div><article aria-live="polite" class="learning-plan reveal"><p class="eyebrow">History &amp; civics plan</p><h3 id="plan-title">How a country holds tradition and change together</h3><div class="plan-list"><div class="plan-item"><b>Before</b><strong id="plan-before">Compare one image of Tokyo and one of Kyoto. What assumptions do they create before students arrive?</strong></div><div class="plan-item"><b>During</b><strong id="plan-during">Collect evidence of how public space, ritual, technology, and historical memory shape daily life across Japan.</strong></div><div class="plan-item"><b>After</b><strong id="plan-after">Build a short argument: “Where did Japan challenge the expectations we brought with us?”</strong></div></div></article></div></section>
+<section class="section trip-moments-section" id="trip-moments"><div class="container"><div class="section-heading reveal"><div><p class="eyebrow">Voice of the traveler</p><h2>Explore the trip through real moments.</h2></div><p>Follow the route and open moments from students, educators, and Tour Leads along the way.</p></div><div class="trip-map-shell"><div aria-label="Map of Japan connecting Tokyo, Hakone, Kyoto, and Hiroshima with clickable trip moments" class="trip-map real-map"><iframe class="japan-map-frame" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=128.2%2C32.0%2C141.8%2C36.8&amp;layer=mapnik" title="Map of Japan route"></iframe><div class="map-tint"></div><svg aria-hidden="true" class="trip-map-route" preserveaspectratio="none" viewbox="0 0 100 100"><path d="M82 28 C75 34 68 42 61 52 C54 62 47 66 39 70 C30 76 22 82 17 88" fill="none" stroke="#0873e6" stroke-dasharray="3 2" stroke-width="1.4"></path></svg><span class="map-city-label" style="left:82%;top:28%">Tokyo</span><span class="map-city-label" style="left:69%;top:49%">Hakone</span><span class="map-city-label" style="left:42%;top:68%">Kyoto</span><span class="map-city-label" style="left:17%;top:88%">Hiroshima</span><button aria-label="Open Tokyo student video" class="map-dot is-active" data-map-story="tokyo-video" style="left:80%;top:35%"><span>▶</span></button><button aria-label="Open Hakone image story" class="map-dot" data-map-story="hakone-image" style="left:72%;top:48%"><span>●</span></button><button aria-label="Open Kyoto Tour Lead audio" class="map-dot" data-map-story="kyoto-audio" style="left:45%;top:65%"><span>♪</span></button><button aria-label="Open Hiroshima educator audio" class="map-dot" data-map-story="hiroshima-audio" style="left:20%;top:82%"><span>♪</span></button><div class="map-attribution">© OpenStreetMap contributors</div></div><article class="map-story-card reveal"><div class="map-story-media photo-shell" data-fallback="Japan student story"><img alt="Tokyo at night" data-photo="" id="map-story-image" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></div><div class="map-story-copy"><p class="eyebrow" id="map-story-role">Student video · Tokyo</p><h3 id="map-story-title">The moment Tokyo stopped feeling overwhelming.</h3><p id="map-story-text">“Once I understood the trains and the rhythm of the streets, the city started feeling exciting instead of huge.”</p><button class="btn btn-dark btn-small" data-demo="This short student clip would play here." id="map-story-action" type="button">Play 21 sec</button></div></article></div></div></section>
+<section class="section price-section" id="price"><div class="container"><div class="price-heading reveal"><p class="eyebrow">Start planning</p><h2>Unlock a price for your group.</h2><p>Choose a departure city and date to see an illustrative starting point, then build a personalized quote with EF.</p></div><div class="price-calculator reveal"><div class="price-fields"><label>Leaving from:<input aria-label="Leaving from" value="Boston (MA)"/></label><label>Leaving on:<input aria-label="Leaving on" value="06 / 24 / 2027"/></label></div><div class="price-main"><strong>$5,499<span>*</span></strong><button class="price-details-link" data-demo="Price inclusions and restrictions would open here." type="button">View price details →</button></div><div class="price-cta"><button class="btn btn-primary" data-demo="A personalized Japan quote flow would start here." type="button">Get your personalized quote</button><small>*Illustrative prototype pricing. Restrictions apply.</small></div></div><div class="price-support-grid"><button class="price-support-card" data-demo="Payment plan details would open here." type="button"><span class="support-icon">▣</span><span><strong>Payment plan options</strong><small>Pay over time interest-free or pay all at once</small></span><b>→</b></button><button class="price-support-card" data-demo="Fundraising options would open here." type="button"><span class="support-icon">▤</span><span><strong>Fundraising</strong><small>Tools to help make the trip more accessible</small></span><b>→</b></button><button class="price-support-card" data-demo="Scholarship information would open here." type="button"><span class="support-icon">◎</span><span><strong>Global Citizen Scholarship</strong><small>Explore EF scholarship opportunities</small></span><b>→</b></button></div></div></section>
+<section class="section faq-section" id="faqs"><div class="container faq-layout"><div class="faq-intro"><p class="eyebrow">Planning together</p><h2>What families usually ask.</h2><p>Give students, educators, and families a clear path from excitement to practical decision-making.</p><a class="btn btn-primary" href="pitch.html">Pitch the trip →</a></div><div class="faq-list"><details open=""><summary>What is included?</summary><p>Round-trip transportation, hotels, selected meals, a full-time Tour Director, guided sightseeing, entrances, and continuous support are built around the group experience.</p></details><details><summary>How demanding is the itinerary?</summary><p>Japan combines substantial walking, public transportation, early starts, and fast-moving days. EF can help groups understand pacing and preparation before departure.</p></details><details><summary>How does the learning continue after the trip?</summary><p>Students can turn observations, images, questions, and reflections into classroom work, family stories, and guidance for future travelers.</p></details></div></div></section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<a class="brand" href="index.html"><img alt="EF logo" class="brand-logo" src="ef-logo.svg"/></a>
+<p>Independent interview concept by Nathan Tia. EF and related marks belong to their owners. Student names and quotes are illustrative.</p>
+</div>
+<div class="footer-links"><a href="index.html">Overview</a><a href="explore.html">Discover</a><a href="trip.html">Understand</a><a href="dashboard.html">Reflect</a></div>
+</div>
+</footer>
+<div aria-live="polite" class="toast" role="status"></div>
+<script src="app.js"></script>
 </body>
 </html>

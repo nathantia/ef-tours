@@ -1,176 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A focused post-trip EF Tours dashboard that helps students explain what they learned and how they will apply it.">
-  <title>My Learning Summary · EF Tours Concept</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="A focused post-trip EF Tours dashboard that helps students explain what they learned and how they will apply it." name="description"/>
+<title>My Learning Summary · EF Tours Concept</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body data-page="dashboard">
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="prototype-ribbon"><span class="dot"></span> Concept 03 · Post-trip dashboard · Reflection assistance simulated locally</div>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="EF Educational Tours concept home"><img class="brand-logo" src="ef-logo.svg" alt="EF logo"></a>
-      <nav class="primary-nav" aria-label="Primary navigation">
-        <a href="index.html">Overview</a>
-        <a href="explore.html">Discover</a>
-        <a href="trip.html">Understand</a>
-        <a href="dashboard.html" aria-current="page">Reflect</a>
-      </nav>
-      <div class="header-actions">
-        <button class="btn btn-primary btn-small" type="button" data-demo="A concise learning summary would download here.">Download summary</button>
-        <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-      </div>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="dashboard-hero">
-      <div class="container">
-        <div class="dashboard-hero-card">
-          <div class="dashboard-hero-copy">
-            <p class="eyebrow">Welcome Back</p>
-            <h1>Maya, what did the trip teach you?</h1>
-            <p>Choose one moment. Explain what you learned. Turn it into a class connection or a useful tip for the next group.</p>
-          </div>
-          <figure class="dashboard-photo photo-shell" data-fallback="Student travel reflection">
-            <img loading="eager" data-photo src="https://a.storyblok.com/f/336931/750x691/ef0ade726b/vimy-100-blog-hero-mob.png/m/1200x630/smart/filters%3Aformat%28jpeg%29" alt="Students visiting a historic memorial while traveling with EF">
-            <figcaption class="dashboard-photo-caption">London · Paris · Rome · June 2026</figcaption>
-          </figure>
-        </div>
-        <div class="task-progress" aria-label="Three-step reflection process">
-          <div><b>1</b>Choose a moment</div>
-          <div><b>2</b>Explain what you learned</div>
-          <div><b>3</b>Choose where to use it</div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="group-experience-section" aria-labelledby="group-experience-title">
-      <div class="container">
-        <div class="group-experience-heading reveal">
-          <div>
-            <p class="eyebrow">Your group experience</p>
-            <h2 id="group-experience-title">The moments your group shared.</h2>
-          </div>
-          <p>Photos, clips, and stories from your London, Paris &amp; Rome tour—saved in one place before you turn them into reflection.</p>
-        </div>
-        <div class="group-experience-grid">
-          <button class="group-media-card group-media-card-featured photo-shell reveal" type="button" data-demo="The first-night-in-London group video would open here." data-fallback="First night in London">
-            <img loading="lazy" data-photo src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="London skyline and Big Ben at dusk">
-            <span class="group-media-play">▶</span>
-            <span class="group-media-copy"><strong>First night in London</strong><small>Shared by Jules · 18 sec</small></span>
-          </button>
-          <button class="group-media-card photo-shell reveal" type="button" data-demo="The Westminster group photo would open here." data-fallback="Westminster group photo">
-            <img loading="lazy" data-photo src="https://a.storyblok.com/f/239725/1500x2100/b50e0739fd/01_gb_lon_gallery_activities_studentssightseeing.png/m/1371x1920/filters%3Aquality%2870%29" alt="Students exploring London with an EF staff member">
-            <span class="group-media-type">Photo</span>
-            <span class="group-media-copy"><strong>Westminster with the group</strong><small>Added by Ms. Rivera</small></span>
-          </button>
-          <button class="group-media-card photo-shell reveal" type="button" data-demo="The Louvre reaction clip would open here." data-fallback="Louvre reaction">
-            <img loading="lazy" data-photo src="https://a.storyblok.com/f/239725/1500x2000/f41bc5ca5e/04_fr_par_gallery_activities_studentssightseeingatarcdetriomphe.png" alt="Students exploring Paris with an EF staff member">
-            <span class="group-media-play">▶</span>
-            <span class="group-media-copy"><strong>The Louvre reaction</strong><small>Shared by Maya · 23 sec</small></span>
-          </button>
-          <button class="group-media-card group-media-card-audio reveal" type="button" data-demo="The Rome group audio story would play here.">
-            <span class="group-audio-icon">♪</span>
-            <span class="group-media-copy"><strong>What everyone kept talking about in Rome</strong><small>From your Tour Lead · 24 sec audio</small></span>
-          </button>
-          <button class="group-media-card photo-shell reveal" type="button" data-demo="The final group photo would open here." data-fallback="Final group photo">
-            <img loading="lazy" data-photo src="https://a-us.storyblok.com/f/1021279/1440x757/25f35d28a8/group-photo.png/m/1600x840/filters%3Aquality%2870%29" alt="Student group on an EF trip in Europe">
-            <span class="group-media-type">Photo</span>
-            <span class="group-media-copy"><strong>One last group photo</strong><small>Rome · Day 9</small></span>
-          </button>
-        </div>
-        <div class="group-experience-footer reveal">
-          <button class="btn btn-secondary" type="button" data-demo="A private gallery with all 48 shared group moments would open here.">View all 48 group moments <span aria-hidden="true">→</span></button>
-        </div>
-      </div>
-    </section>
-
-    <section class="workspace">
-      <div class="container workspace-grid">
-        <section class="workspace-card reveal" aria-labelledby="reflection-title">
-          <p class="eyebrow">Reflection organizer</p>
-          <h2 id="reflection-title">Build your learning summary.</h2>
-
-          <div class="step-block">
-            <div class="step-title"><span class="step-number">1</span><h3>Choose one moment</h3></div>
-            <div class="moment-grid" role="group" aria-label="Choose a trip moment">
-              <button class="moment-card" type="button" aria-pressed="false" data-moment="london">
-                <figure class="photo-shell" data-fallback="London"><img loading="lazy" data-photo src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="London skyline and Big Ben"></figure>
-                <span>London: public space and power</span>
-              </button>
-              <button class="moment-card" type="button" aria-pressed="false" data-moment="paris">
-                <figure class="photo-shell" data-fallback="Paris"><img loading="lazy" data-photo src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="The Eiffel Tower in Paris"></figure>
-                <span>Paris: art and everyday culture</span>
-              </button>
-              <button class="moment-card is-selected" type="button" aria-pressed="true" data-moment="rome">
-                <figure class="photo-shell" data-fallback="Rome"><img loading="lazy" data-photo src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="The Colosseum in Rome"></figure>
-                <span>Rome: engineering and civic life</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="step-block">
-            <div class="step-title"><span class="step-number">2</span><h3>What did you learn?</h3></div>
-            <label class="textarea-label" for="learning-input">Write it in your own words.</label>
-            <textarea id="learning-input">At the Roman Forum, I could see how roads, temples, and gathering spaces organized public life. Architecture was not just decoration—it showed who had power and what society valued.</textarea>
-          </div>
-
-          <div class="step-block">
-            <div class="step-title"><span class="step-number">3</span><h3>Where will you use it?</h3></div>
-            <div class="use-grid" role="group" aria-label="Choose how to use the reflection">
-              <button class="use-card is-selected" type="button" aria-pressed="true" data-use="classroom"><strong>Class assignment</strong><span>Connect the moment to a subject.</span></button>
-              <button class="use-card" type="button" aria-pressed="false" data-use="family"><strong>Family recap</strong><span>Explain what made the trip valuable.</span></button>
-              <button class="use-card" type="button" aria-pressed="false" data-use="traveler"><strong>Next year’s group</strong><span>Share one useful insight.</span></button>
-            </div>
-          </div>
-
-          <button class="btn btn-primary" type="button" id="organize-reflection">Organize my reflection</button>
-          <p class="ai-inline-note"><span class="ai-spark">✦</span><span>AI organizes your words. It does not invent a learning claim or publish anything automatically.</span></p>
-        </section>
-
-        <aside>
-          <article class="draft-card reveal" aria-live="polite">
-            <p class="eyebrow">Your learning summary</p>
-            <div class="draft-photo photo-shell" data-fallback="Rome"><img id="draft-photo" data-photo src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="The Colosseum in Rome"></div>
-            <h2 id="draft-title">How Rome changed the way I read public space.</h2>
-            <div class="draft-block"><span>The moment</span><p id="draft-experience">At the Roman Forum, I stood inside the roads, temples, and gathering places that organized civic life.</p></div>
-            <div class="draft-block"><span>What I learned</span><p id="draft-learning">Architecture can communicate power, shared values, and who belongs in public life.</p></div>
-            <div class="draft-block"><span>How I’ll apply it</span><p id="draft-application">In history class, I can compare the Forum with Boston City Hall Plaza and use my own photos as evidence.</p></div>
-            <div class="draft-actions">
-              <button class="btn btn-primary btn-small" type="button" data-demo="The summary would open in an editable state.">Edit</button>
-              <button class="btn btn-secondary btn-small" type="button" data-demo="A concise learning summary would download here.">Download</button>
-            </div>
-          </article>
-
-          <section class="pass-card reveal" aria-labelledby="pass-title">
-            <p class="mini">Optional · teacher reviewed</p>
-            <h3 id="pass-title">Help the next group</h3>
-            <p>Share one useful piece of advice. Your teacher reviews it before another student sees it.</p>
-            <div class="pass-row">
-              <input id="traveler-tip" type="text" value="Don’t try to memorize every fact. Ask what the place was built to make people think or do." aria-label="Tip for future travelers">
-              <button class="btn btn-dark" type="button" id="send-tip">Send for review</button>
-            </div>
-          </section>
-        </aside>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand" href="index.html"><img class="brand-logo" src="ef-logo.svg" alt="EF logo"></a>
-        <p>Independent interview concept by Nathan Tia. EF and related marks belong to their owners. Student names and quotes are illustrative.</p>
-      </div>
-      <div class="footer-links"><a href="index.html">Overview</a><a href="explore.html">Discover</a><a href="trip.html">Understand</a><a href="dashboard.html">Reflect</a></div>
-    </div>
-  </footer>
-  <div class="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="prototype-ribbon"><span class="dot"></span> Concept 03 · Post-trip dashboard · Reflection assistance simulated locally</div>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="EF Educational Tours concept home" class="brand" href="index.html"><img alt="EF logo" class="brand-logo" src="ef-logo.svg"/></a>
+<nav aria-label="Primary navigation" class="primary-nav">
+<a href="index.html">Overview</a>
+<a href="explore.html">Discover</a>
+<a href="trip.html">Understand</a>
+<a aria-current="page" href="dashboard.html">Reflect</a>
+</nav>
+<div class="header-actions">
+<button class="btn btn-primary btn-small" data-demo="A concise learning summary would download here." type="button">Download summary</button>
+<button aria-expanded="false" aria-label="Open navigation" class="menu-button" type="button"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="dashboard-hero">
+<div class="container">
+<div class="dashboard-hero-card">
+<div class="dashboard-hero-copy">
+<p class="eyebrow">Welcome Back</p>
+<h1>Maya, what did the trip teach you?</h1>
+<p>Choose one moment. Explain what you learned. Turn it into a class connection or a useful tip for the next group.</p>
+</div>
+<figure class="dashboard-photo photo-shell" data-fallback="Student travel reflection">
+<img alt="Maya and classmates traveling in Japan" data-photo="" loading="eager" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/>
+<figcaption class="dashboard-photo-caption">Japan: Land of the Rising Sun · June 2026</figcaption>
+</figure>
+</div>
+<div aria-label="Three-step reflection process" class="task-progress">
+<div><b>1</b>Choose a moment</div>
+<div><b>2</b>Explain what you learned</div>
+<div><b>3</b>Choose where to use it</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="group-experience-title" class="group-experience-section">
+<div class="container">
+<div class="group-experience-heading reveal">
+<div>
+<p class="eyebrow">Your group experience</p>
+<h2 id="group-experience-title">The moments your group shared.</h2>
+</div>
+<p>Photos, clips, and stories from your Japan tour—saved in one place before you turn them into reflection.</p>
+</div>
+<div class="group-experience-grid">
+<button class="group-media-card group-media-card-featured photo-shell reveal" data-demo="The Shibuya group video would open here." data-fallback="Tokyo group moment" type="button">
+<img alt="Group travel moment in Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/>
+<span class="group-media-play">▶</span>
+<span class="group-media-copy"><strong>Shibuya after dark</strong><small>Shared by Jules · 18 sec</small></span>
+</button>
+<button class="group-media-card photo-shell reveal" data-demo="The Westminster group photo would open here." data-fallback="Westminster group photo" type="button">
+<img alt="Group travel moment in Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/>
+<span class="group-media-type">Photo</span>
+<span class="group-media-copy"><strong>Fushimi Inari together</strong><small>Added by Ms. Rivera · Group photo</small></span>
+</button>
+<button class="group-media-card photo-shell reveal" data-demo="The Louvre reaction clip would open here." data-fallback="Louvre reaction" type="button">
+<img alt="Group travel moment in Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/>
+<span class="group-media-play">▶</span>
+<span class="group-media-copy"><strong>The Mount Fuji reaction</strong><small>Shared by Maya · 23 sec</small></span>
+</button>
+<button class="group-media-card group-media-card-audio reveal" data-demo="The bullet-train group audio story would play here." type="button">
+<span class="group-audio-icon">♪</span>
+<span class="group-media-copy"><strong>What everyone kept talking about on the bullet train</strong><small>From your Tour Lead · 24 sec audio</small></span>
+</button>
+<button class="group-media-card photo-shell reveal" data-demo="The final group photo would open here." data-fallback="Final group photo" type="button">
+<img alt="Group travel moment in Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/>
+<span class="group-media-type">Photo</span>
+<span class="group-media-copy"><strong>One last group photo</strong><small>Hiroshima · Day 9</small></span>
+</button>
+</div>
+<div class="group-experience-footer reveal">
+<button class="btn btn-secondary" data-demo="A private gallery with all 48 shared group moments would open here." type="button">View all 48 group moments <span aria-hidden="true">→</span></button>
+</div>
+</div>
+</section>
+<section class="workspace">
+<div class="container workspace-grid">
+<section aria-labelledby="reflection-title" class="workspace-card reveal">
+<p class="eyebrow">Reflection organizer</p>
+<h2 id="reflection-title">Build your learning summary.</h2>
+<div class="step-block">
+<div class="step-title"><span class="step-number">1</span><h3>Choose one moment</h3></div>
+<div aria-label="Choose a trip moment" class="moment-grid" role="group">
+<button aria-pressed="false" class="moment-card" data-moment="tokyo" type="button">
+<figure class="photo-shell" data-fallback="Tokyo"><img alt="Tokyo, Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></figure>
+<span>Tokyo: pace, systems, and identity</span>
+</button>
+<button aria-pressed="false" class="moment-card" data-moment="kyoto" type="button">
+<figure class="photo-shell" data-fallback="Kyoto"><img alt="Kyoto, Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></figure>
+<span>Kyoto: tradition in everyday life</span>
+</button>
+<button aria-pressed="true" class="moment-card is-selected" data-moment="hiroshima" type="button">
+<figure class="photo-shell" data-fallback="Hiroshima"><img alt="Hiroshima, Japan" data-photo="" loading="lazy" src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></figure>
+<span>Hiroshima: memory and perspective</span>
+</button>
+</div>
+</div>
+<div class="step-block">
+<div class="step-title"><span class="step-number">2</span><h3>What did you learn?</h3></div>
+<label class="textarea-label" for="learning-input">Write it in your own words.</label>
+<textarea id="learning-input">At the Hiroshima Peace Memorial Museum, I understood how a place can teach history while also asking visitors to think about responsibility, memory, and what happens next.</textarea>
+</div>
+<div class="step-block">
+<div class="step-title"><span class="step-number">3</span><h3>Where will you use it?</h3></div>
+<div aria-label="Choose how to use the reflection" class="use-grid" role="group">
+<button aria-pressed="true" class="use-card is-selected" data-use="classroom" type="button"><strong>Class assignment</strong><span>Connect the moment to a subject.</span></button>
+<button aria-pressed="false" class="use-card" data-use="family" type="button"><strong>Family recap</strong><span>Explain what made the trip valuable.</span></button>
+<button aria-pressed="false" class="use-card" data-use="traveler" type="button"><strong>Next year’s group</strong><span>Share one useful insight.</span></button>
+</div>
+</div>
+<button class="btn btn-primary" id="organize-reflection" type="button">Organize my reflection</button>
+<p class="ai-inline-note"><span class="ai-spark">✦</span><span>AI organizes your words. It does not invent a learning claim or publish anything automatically.</span></p>
+</section>
+<aside>
+<article aria-live="polite" class="draft-card reveal">
+<p class="eyebrow">Your learning summary</p>
+<div class="draft-photo photo-shell" data-fallback="Hiroshima"><img alt="Hiroshima, Japan" data-photo="" id="draft-photo" src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/></div>
+<h2 id="draft-title">How Hiroshima changed the way I think about historical memory.</h2>
+<div class="draft-block"><span>The moment</span><p id="draft-experience">In Hiroshima, I moved from historical facts into a place designed around memory, reflection, and the consequences of decisions.</p></div>
+<div class="draft-block"><span>What I learned</span><p id="draft-learning">A historical site can communicate facts and also shape how people understand responsibility, loss, and peace.</p></div>
+<div class="draft-block"><span>How I’ll apply it</span><p id="draft-application">In history class, I can compare how Hiroshima and a memorial closer to home choose what to preserve, explain, and ask visitors to remember.</p></div>
+<div class="draft-actions">
+<button class="btn btn-primary btn-small" data-demo="The summary would open in an editable state." type="button">Edit</button>
+<button class="btn btn-secondary btn-small" data-demo="A concise learning summary would download here." type="button">Download</button>
+</div>
+</article>
+<section aria-labelledby="pass-title" class="pass-card reveal">
+<p class="mini">Optional · teacher reviewed</p>
+<h3 id="pass-title">Help the next group</h3>
+<p>Share one useful piece of advice. Your teacher reviews it before another student sees it.</p>
+<div class="pass-row">
+<input aria-label="Tip for future travelers" id="traveler-tip" type="text" value="Don’t try to memorize every fact. Ask what the place was built to make people think or do."/>
+<button class="btn btn-dark" id="send-tip" type="button">Send for review</button>
+</div>
+</section>
+</aside>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<a class="brand" href="index.html"><img alt="EF logo" class="brand-logo" src="ef-logo.svg"/></a>
+<p>Independent interview concept by Nathan Tia. EF and related marks belong to their owners. Student names and quotes are illustrative.</p>
+</div>
+<div class="footer-links"><a href="index.html">Overview</a><a href="explore.html">Discover</a><a href="trip.html">Understand</a><a href="dashboard.html">Reflect</a></div>
+</div>
+</footer>
+<div aria-live="polite" class="toast" role="status"></div>
+<script src="app.js"></script>
 </body>
 </html>

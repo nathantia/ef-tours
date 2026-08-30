@@ -93,7 +93,7 @@
       culture: {
         title: 'Trips for food, history, and confidence.',
         summary: 'Recommendations shaped around what you want to experience and become.',
-        order: ['lpr', 'ig', 'japan', 'gas', 'costa', 'peru'],
+        order: ['japan', 'lpr', 'ig', 'gas', 'costa', 'peru'],
         copy: {
           student: {
             lpr: 'Three iconic cities with art, food, and enough structure to make a first big trip feel doable.',
@@ -124,7 +124,7 @@
       nature: {
         title: 'Trips for nature, challenge, and confidence.',
         summary: 'Recommendations shaped around outdoor learning, movement, and places that push students a little.',
-        order: ['costa', 'peru', 'gas', 'japan', 'lpr', 'ig'],
+        order: ['japan', 'lpr', 'ig', 'gas', 'costa', 'peru'],
         copy: {
           student: {
             costa: 'Rainforests, wildlife, and active days make the environment feel like something you explore—not just study.',
@@ -155,7 +155,7 @@
       language: {
         title: 'Trips for language, culture, and everyday connection.',
         summary: 'Recommendations shaped around hearing another language, noticing local routines, and learning through everyday life.',
-        order: ['costa', 'lpr', 'peru', 'japan', 'gas', 'ig'],
+        order: ['japan', 'lpr', 'ig', 'gas', 'costa', 'peru'],
         copy: {
           student: {
             costa: 'A welcoming place to hear and practice Spanish while learning through food, nature, and everyday interactions.',
@@ -186,7 +186,7 @@
       history: {
         title: 'Trips where history becomes something students can test.',
         summary: 'Recommendations shaped around major historic sites, visible evidence, and strong classroom connections.',
-        order: ['ig', 'lpr', 'peru', 'japan', 'gas', 'costa'],
+        order: ['japan', 'lpr', 'ig', 'gas', 'costa', 'peru'],
         copy: {
           student: {
             ig: 'If you want history to stop feeling like a chapter, every site gives you something concrete to notice and question.',
@@ -328,34 +328,10 @@
   function initTrip() {
     if (document.body.dataset.page !== 'trip') return;
     const planData = {
-      history: {
-        label: 'History & civics plan',
-        title: 'How cities show power',
-        before: 'Compare one modern public space with Westminster. What does its design ask people to notice?',
-        during: 'Photograph or sketch evidence of how power is represented in London, Paris, and Rome.',
-        after: 'Create a five-slide argument: “What can a city teach us about who held power?”'
-      },
-      art: {
-        label: 'Art & design plan',
-        title: 'How place changes what art communicates',
-        before: 'Choose one artwork or building from each city and note its audience, material, and original purpose.',
-        during: 'Record scale, setting, texture, and one detail that was difficult to see on a screen.',
-        after: 'Create a visual comparison explaining how seeing work in place changed your interpretation.'
-      },
-      language: {
-        label: 'World language plan',
-        title: 'Using language in everyday situations',
-        before: 'Prepare practical phrases for greetings, ordering, directions, and asking one follow-up question.',
-        during: 'Use the language in one supported daily interaction and note what helped the conversation work.',
-        after: 'Record a short spoken reflection describing what you said, understood, and would try next.'
-      },
-      literature: {
-        label: 'Literature plan',
-        title: 'How setting shapes a story',
-        before: 'Read a short text connected to London, Paris, or Rome and identify how setting affects tone or character.',
-        during: 'Capture sensory details, overheard language, and one place that challenged the version you imagined.',
-        after: 'Write a scene or short analysis using firsthand details from the trip as evidence.'
-      }
+      history: { label:'History & civics plan', title:'How a country holds tradition and change together', before:'Compare one image of Tokyo and one of Kyoto. What assumptions do they create before students arrive?', during:'Collect evidence of how public space, ritual, infrastructure, and historical memory shape daily life across Japan.', after:'Build a short argument: “Where did Japan challenge the expectations we brought with us?”' },
+      art: { label:'Art & design plan', title:'How design communicates values', before:'Choose one example of Japanese architecture, graphic design, or craft and identify what you expect to notice in person.', during:'Record examples of material, scale, detail, signage, and visual hierarchy from Tokyo through Kyoto.', after:'Create a visual comparison explaining how design choices changed across modern, sacred, and historical settings.' },
+      language: { label:'World language plan', title:'Language, etiquette, and context', before:'Prepare practical Japanese phrases for greetings, thanks, ordering, and asking a simple question.', during:'Use language in supported daily interactions and notice how tone, gesture, and etiquette help meaning travel beyond vocabulary.', after:'Record a short reflection on one interaction and what context taught you that translation alone could not.' },
+      literature: { label:'Literature plan', title:'How setting shapes perspective', before:'Read a short text connected to Tokyo, Kyoto, or Hiroshima and identify what the setting asks the reader to notice.', during:'Collect sensory details and one place that challenged the version of Japan you imagined before arrival.', after:'Write a scene or analysis using firsthand details from the trip as evidence.' }
     };
 
     $$('[data-day-tabs]').forEach((group) => {
@@ -398,12 +374,10 @@
     }
 
     const mapStories = {
-      'london-video': { role:'Student video · London', title:'The first moment London felt real.', text:'“I knew the landmarks, but walking between them made the city feel completely different from the version I had in my head.”', image:'https://a.storyblok.com/f/239725/1500x2100/b50e0739fd/01_gb_lon_gallery_activities_studentssightseeing.png/m/1371x1920/filters%3Aquality%2870%29', alt:'Students exploring London', action:'Play 21 sec', demo:'This short student clip would play here.' },
-      'london-audio': { role:'Tour Lead audio · London', title:'What students notice after the landmarks.', text:'“The transit, the pace, and the way people use public space usually become as memorable as the sites themselves.”', image:'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1000&q=80', alt:'London skyline', action:'Play 24 sec', demo:'Leo’s Tour Lead audio would play here.' },
-      'paris-image': { role:'Student image · Paris', title:'One artwork changed the whole day.', text:'A student captures the scale and detail of seeing art in place, not only on a classroom screen.', image:'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80', alt:'Paris and the Eiffel Tower', action:'View story', demo:'The student image story would open here.' },
-      'paris-audio': { role:'Educator audio · Paris', title:'When observation turns into interpretation.', text:'“Once students started comparing what they saw in the museum with the streets outside, the learning became much more personal.”', image:'https://a.storyblok.com/f/239725/1500x2000/f41bc5ca5e/04_fr_par_gallery_activities_studentssightseeingatarcdetriomphe.png', alt:'Students exploring Paris', action:'Play 26 sec', demo:'Maya’s educator audio would play here.' },
-      'rome-video': { role:'Student video · Rome', title:'History stopped feeling like a chapter.', text:'“Standing in the Forum made me understand how much of Roman life happened in public space.”', image:'https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1000&q=80', alt:'The Colosseum in Rome', action:'Play 19 sec', demo:'Jules’ Rome video would play here.' },
-      'rome-image': { role:'Tour Lead image · Rome', title:'A site becomes evidence.', text:'Students pause to compare what they learned in class with the scale, materials, and layout they can see around them.', image:'https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1000&q=80', alt:'Rome historic site', action:'View moment', demo:'The Rome image story would open here.' }
+      'tokyo-video': { role:'Student video · Tokyo', title:'The moment Tokyo stopped feeling overwhelming.', text:'“Once I understood the trains and the rhythm of the streets, the city started feeling exciting instead of huge.”', image:'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1000&q=80', alt:'Tokyo at night', action:'Play 21 sec', demo:'This short student clip would play here.' },
+      'hakone-image': { role:'Student image · Hakone', title:'Seeing Fuji changed the scale of the trip.', text:'A student captures the shift from Tokyo’s density to the landscape around Hakone and Mount Fuji.', image:'https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&w=1000&q=80', alt:'Mount Fuji, Japan', action:'View story', demo:'The Hakone image story would open here.' },
+      'kyoto-audio': { role:'Tour Lead audio · Kyoto', title:'When students start noticing continuity.', text:'“Kyoto helps students see that tradition is not simply preserved—it is still part of daily choices, rituals, and identity.”', image:'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=80', alt:'Kyoto, Japan', action:'Play 24 sec', demo:'Leo’s Kyoto Tour Lead audio would play here.' },
+      'hiroshima-audio': { role:'Educator audio · Hiroshima', title:'Making space for reflection.', text:'“The most important thing here is not rushing to an answer. Students need time to process what the place is asking them to consider.”', image:'https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1000&q=80', alt:'Hiroshima, Japan', action:'Play 27 sec', demo:'Ms. Rivera’s Hiroshima educator audio would play here.' }
     };
     $$('.map-dot').forEach((button) => button.addEventListener('click', () => {
       const story = mapStories[button.dataset.mapStory];
@@ -439,39 +413,12 @@
     if (document.body.dataset.page !== 'dashboard') return;
 
     const momentData = {
-      london: {
-        title: 'How London changed the way I read public space.',
-        experience: 'In Westminster, I moved through streets, buildings, and gathering places where government, ceremony, and daily life overlap.',
-        defaultLearning: 'Monuments and civic spaces do more than mark history. Their design can communicate national identity, authority, and who is invited to participate.',
-        classroom: 'In history or civics class, I can compare Westminster with a public space in my own city and use photos as evidence.',
-        family: 'I can show my family how London connected government and history to places people still use every day.',
-        traveler: 'Pay attention between the landmarks. Transit, signs, routines, and shared space can teach you as much as the famous sites.',
-        image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1000&q=80',
-        alt: 'London skyline and Big Ben'
-      },
-      paris: {
-        title: 'How Paris changed the way I look at art and daily life.',
-        experience: 'In Paris, I studied art in the Louvre and paid attention to neighborhood streets, meals, public spaces, and how people used the city.',
-        defaultLearning: 'Art, food, and daily routines can be evidence of a culture’s values and history—not just things to look at or consume.',
-        classroom: 'In art or history class, I can choose one artwork, object, or meal and connect it to a historical period or cultural idea.',
-        family: 'I can explain how seeing art and daily life in context helped me understand more than a textbook image could show.',
-        traveler: 'Choose one work you studied before the trip and spend a few quiet minutes noticing scale, material, and details a screen could not show.',
-        image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80',
-        alt: 'The Eiffel Tower in Paris'
-      },
-      rome: {
-        title: 'How Rome changed the way I read public space.',
-        experience: 'At the Roman Forum, I stood inside the roads, temples, and gathering places that organized civic life.',
-        defaultLearning: 'Architecture can communicate power, shared values, and who belongs in public life.',
-        classroom: 'In history class, I can compare the Forum with Boston City Hall Plaza and use my own photos as evidence.',
-        family: 'I can explain how standing inside the Forum made Roman government and daily life easier to understand.',
-        traveler: 'Don’t try to memorize every fact. Ask what the place was built to make people think or do.',
-        image: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1000&q=80',
-        alt: 'The Colosseum in Rome'
-      }
+      tokyo: { title:'How Tokyo changed the way I think about city systems.', experience:'In Tokyo, I moved through dense transit, public space, shrines, shopping districts, and neighborhoods that all seemed to follow their own rhythms.', defaultLearning:'A city can be extremely dense and complex while still feeling organized because design, etiquette, and shared expectations work together.', classroom:'In geography or design class, I can compare Tokyo transit and public-space behavior with the systems in my own city.', family:'I can show my family how the trip made me more confident navigating unfamiliar systems and noticing cultural differences.', traveler:'Pay attention to the ordinary systems—trains, signs, queues, and convenience stores. They teach you as much as the landmarks.', image:'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1000&q=80', alt:'Tokyo, Japan' },
+      kyoto: { title:'How Kyoto changed what tradition meant to me.', experience:'In Kyoto, I moved through temples, shrines, gardens, and neighborhoods where historic practices still shape the experience of the city.', defaultLearning:'Tradition is not only something preserved in museums. It can continue through architecture, ritual, craft, etiquette, and everyday behavior.', classroom:'In history or art class, I can use Fushimi Inari or the Golden Pavilion to compare preservation, belief, and cultural identity.', family:'I can explain why Kyoto felt different from Tokyo and how seeing both changed my idea of what “modern Japan” means.', traveler:'Slow down at the shrines. Notice what people do before you focus on taking the picture.', image:'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=80', alt:'Kyoto, Japan' },
+      hiroshima: { title:'How Hiroshima changed the way I think about historical memory.', experience:'In Hiroshima, I moved from historical facts into a place designed around memory, reflection, and the consequences of decisions.', defaultLearning:'A historical site can communicate facts and also shape how people understand responsibility, loss, peace, and what societies choose to remember.', classroom:'In history class, I can compare how Hiroshima and a memorial closer to home choose what to preserve, explain, and ask visitors to remember.', family:'I can explain why Hiroshima felt different from learning the same history in a classroom and why the reflection mattered.', traveler:'Give yourself time after the museum before trying to summarize what you think. Some places need space.', image:'https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1000&q=80', alt:'Hiroshima, Japan' }
     };
 
-    let selectedMoment = $('.moment-card[aria-pressed="true"]')?.dataset.moment || 'rome';
+    let selectedMoment = $('.moment-card[aria-pressed="true"]')?.dataset.moment || 'hiroshima';
     let selectedUse = $('.use-card[aria-pressed="true"]')?.dataset.use || 'classroom';
 
     function selectButton(button, selector) {
@@ -549,17 +496,17 @@
     const audienceData = {
       parent: {
         label: 'Parent',
-        headline: 'Why London, Paris & Rome is worth saying yes to.',
-        why: 'I want to experience the art, history, food, and daily life we study from a distance—and do it with my teacher, classmates, and EF support around us.',
+        headline: 'Why Japan: Land of the Rising Sun is worth saying yes to.',
+        why: 'I want to experience Japan’s culture, design, history, technology, and daily life firsthand—and do it with my teacher, classmates, and EF support around us.',
         learning: 'The itinerary connects major sites to history, art, civics, and culture, with opportunities to use trip observations in class after returning.',
         support: 'EF coordinates the group travel experience, Tour Director support, hotels, transportation, and planned activities alongside the educator leading the group.',
         ask: 'Take a look at the trip with me and talk through the cost, timing, and what would make you comfortable saying yes.'
       },
       teacher: {
         label: 'Teacher',
-        headline: 'A trip students are ready to get behind.',
+        headline: 'A Japan trip students are ready to get behind.',
         why: 'Students are interested in a trip that makes history and culture tangible while giving them a supported first international experience.',
-        learning: 'London, Paris, and Rome create natural opportunities for comparison across art, government, history, language, and public life.',
+        learning: 'Japan creates natural opportunities to compare technology, tradition, language, design, belief, historical memory, and everyday life across very different settings.',
         support: 'EF can help turn student interest into a structured tour, with planning support and materials for building family participation.',
         ask: 'Explore whether this tour could fit your learning goals and what it would take to bring a group together.'
       },
@@ -612,7 +559,7 @@
 
     $('#download-packet')?.addEventListener('click', () => {
       const data = audienceData[audience];
-      const html = `<!doctype html><html><head><meta charset="utf-8"><title>EF Tours pitch packet</title><style>body{font-family:Arial,sans-serif;max-width:760px;margin:48px auto;padding:0 28px;color:#0b1522;line-height:1.55}h1{font-size:38px}h2{font-size:18px;margin-top:28px}small{color:#617083}</style></head><body><small>Independent interview concept by Nathan Tia</small><h1>${data.headline}</h1><p><strong>London, Paris & Rome · 10 days · 3 countries</strong></p><h2>Why this trip</h2><p>${data.why}</p><h2>What students can learn</h2><p>${data.learning}</p><h2>How EF supports the experience</h2><p>${data.support}</p><h2>The ask</h2><p>${data.ask}</p></body></html>`;
+      const html = `<!doctype html><html><head><meta charset="utf-8"><title>EF Tours pitch packet</title><style>body{font-family:Arial,sans-serif;max-width:760px;margin:48px auto;padding:0 28px;color:#0b1522;line-height:1.55}h1{font-size:38px}h2{font-size:18px;margin-top:28px}small{color:#617083}</style></head><body><small>Independent interview concept by Nathan Tia</small><h1>${data.headline}</h1><p><strong>Japan: Land of the Rising Sun · 11 days · Japan</strong></p><h2>Why this trip</h2><p>${data.why}</p><h2>What students can learn</h2><p>${data.learning}</p><h2>How EF supports the experience</h2><p>${data.support}</p><h2>The ask</h2><p>${data.ask}</p></body></html>`;
       const blob = new Blob([html], {type:'text/html'});
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
