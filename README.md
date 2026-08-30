@@ -1,11 +1,7 @@
-# EF Tours Journey Prototype · Version 22 — Japan
+# EF Tours Journey Prototype · Version 23 — Japan
 
-This version preserves the locked Version 21 layouts and replaces the low-resolution Japan media assets with higher-resolution PNG photography.
-
-Image direction is intentionally international and human-centered: diverse high-school-age travelers in casual travel clothing, not Japanese school uniforms.
-
-Updated components:
-- Discover: Experience EF through people, not pins.
-- Reflect: The moments your group shared.
-
-All other prototype content and layout remains unchanged from Version 21.
+Dashboard reflection update:
+- Warmer hero prompt: “Maya, what stayed with you?”
+- Default takeaway shifts from Hiroshima to the shinkansen / technology and infrastructure.
+- Learning summary now focuses on how technology, design, mobility, and regional economies connect.
+- Existing Japan imagery and locked layouts are preserved.
