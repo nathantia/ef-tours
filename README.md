@@ -1,9 +1,11 @@
-# EF Tours Prototype · Version 21 Japan
+# EF Tours Journey Prototype · Version 22 — Japan
 
-Locked design update focused only on restoring human connection in the two student-story media components.
+This version preserves the locked Version 21 layouts and replaces the low-resolution Japan media assets with higher-resolution PNG photography.
 
-Updated:
+Image direction is intentionally international and human-centered: diverse high-school-age travelers in casual travel clothing, not Japanese school uniforms.
+
+Updated components:
 - Discover: Experience EF through people, not pins.
 - Reflect: The moments your group shared.
 
-All relevant image cards now feature visible students/group-tour moments in Japan. Layout, copy structure, and interactions are otherwise preserved.
+All other prototype content and layout remains unchanged from Version 21.
